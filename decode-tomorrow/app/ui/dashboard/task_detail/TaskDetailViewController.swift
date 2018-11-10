@@ -17,25 +17,35 @@ class TaskDetailViewController: UIViewController, Storyboarded {
 
     // END OUTLETS
 
-    var feature: ClaimTask?
+    var feature: ClaimTaskFeature?
 
     // MARK: - Init
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        self.title = self.taskViewModel.title
+    }
+    
+    private var taskViewModel: TaskViewModel!
+    
+    func initValues(_ taskViewModel: TaskViewModel) {
+        self.taskViewModel = taskViewModel
     }
 
     private func initFeature() {
-        self.feature = <#FeatureInit#>
+        self.feature = ClaimTaskFeature(self)
     }
 
     // MARK: - Actions
 
 }
 
-extension <#Name#>ViewController: <#Protocol#> {
-
-    <#code#>
+extension TaskDetailViewController: ClaimTaskFeatureDeletage {
+    
+    func claimTaskSuccess(_ viewModel: ClaimTaskViewModel) {
+    }
+    
+    func claimTaskError(error: String) {
+    }
 
 }

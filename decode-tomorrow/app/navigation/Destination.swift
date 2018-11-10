@@ -20,7 +20,7 @@ enum Destination {
     case register
     case documentUpload
     case dashboard
-    case taskDetails
+    case taskDetails(TaskViewModel)
     
     var viewController: UIViewController {
         switch self {
@@ -34,8 +34,10 @@ enum Destination {
             return DocumentUploadViewController.instanciate()
         case .dashboard:
             return DashboardViewController.instanciate()
-        case .taskDetail:
-            <#code#>
+        case .taskDetails(let taskViewModel):
+            let vc = TaskDetailViewController.instanciate()
+            vc.initValues(taskViewModel)
+            return vc
         }
     }
     
@@ -44,7 +46,8 @@ enum Destination {
         case .login,
              .register,
              .documentUpload,
-             .dashboard:
+             .dashboard,
+             .taskDetails:
             return nil
         }
     }
@@ -56,6 +59,8 @@ enum Destination {
              .documentUpload,
              .dashboard:
             return .present
+        case .taskDetails:
+            return .push
         }
     }
     
@@ -65,7 +70,8 @@ enum Destination {
              .dashboard:
             return false
         case .register,
-             .documentUpload:
+             .documentUpload,
+             .taskDetails:
             return true
         }
     }
