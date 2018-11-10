@@ -31,7 +31,7 @@ class RegistrationViewController: UIViewController, Storyboarded {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        initFeature()
     }
     
     private func initFeature() {
@@ -39,7 +39,21 @@ class RegistrationViewController: UIViewController, Storyboarded {
     }
     
     // MARK: - Actions
+    func mockInput() {
+        self.phoneNumberTextField.text = "09258627861"
+        self.passwordTextField.text = "password"
+        self.confirmPasswordTextField.text = "password"
+        self.emailTextField.text = "mark@gmail.com"
+        self.nameTextField.text = "Mark Alain D. Rufino"
+        self.addressTextField.text = "Metrowalk"
+        self.schoolTextField.text = "UA"
+    }
+    
     @IBAction func didTapConfirmButton(_ sender: Any) {
+        
+        #if DEBUG
+        mockInput()
+        #endif
         
         let hc = "student"
         
@@ -72,14 +86,14 @@ class RegistrationViewController: UIViewController, Storyboarded {
             return
         }
         
-        guard let school = addressTextField.text?.trim() else {
+        guard let school = schoolTextField.text?.trim() else {
             return
         }
         
         let inputs = [mobileNumber, password, confirmPassword, email, name, address, school]
         let hasAnEmptyInput = inputs.filter { $0 == "" }.count != 0
         
-        guard hasAnEmptyInput else {
+        guard !hasAnEmptyInput else {
             showAlert(.error, message: "All fields are required!")
             return
         }

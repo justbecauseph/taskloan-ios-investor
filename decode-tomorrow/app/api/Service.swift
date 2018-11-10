@@ -12,13 +12,14 @@ import Moya
 enum Service {
     case login(LoginParams)
     case register(RegistrationParams)
+    case uploadDocument(Data)
     case getTasksList
 }
 
 extension Service: TargetType {
     
     var baseURL: URL {
-        let urlString = "www.foo.ph/api/"
+        let urlString = "https://www.taskloan.pro/api/"
         guard let url = URL(string: urlString) else { fatalError() }
         return url
     }
@@ -28,16 +29,19 @@ extension Service: TargetType {
         case .login:
             return "login"
         case .register:
-            return "register"
+            return "users"
         case .getTasksList:
             return "tasks"
+        case .uploadDocument:
+            return "me/documents"
         }
     }
     
     var method: Moya.Method {
         switch self {
         case .login,
-             .register:
+             .register,
+             .uploadDocument:
             return .post
         case .getTasksList:
             return .get
@@ -56,6 +60,9 @@ extension Service: TargetType {
             return .requestJSONEncodable(params)
         case .getTasksList:
             return .requestPlain
+        case .uploadDocument(let data):
+            let mfd = MultipartFormData(provider: .data(data), name: "name", fileName: "filename", mimeType: "image/jpeg")
+            return .uploadMultipart([mfd])
         }
     }
     
@@ -67,9 +74,10 @@ extension Service: TargetType {
     var headers: [String : String]? {
         switch self.authType {
         case .none:
-            return nil
+            return ["Accept": "application/json"]
         case .loggedIn:
-            return [HeaderKeys.authorization.rawValue: CredentialsManager.shared.token!]
+            return [HeaderKeys.authorization.rawValue: CredentialsManager.shared.token!,
+                    "Accept": "application/json"]
         }
     }
     
@@ -84,7 +92,8 @@ extension Service {
         case .register,
              .login:
             return .none
-        case .getTasksList:
+        case .getTasksList,
+             .uploadDocument:
             return .loggedIn
         }
     }
