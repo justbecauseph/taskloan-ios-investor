@@ -1,5 +1,5 @@
 //
-//  SampleResponse.swift
+//  LoginResponse.swift
 //  decode-tomorrow
 //
 //  Created by Mark on 10/11/2018.
@@ -8,5 +8,5 @@
 
 import Foundation
 
-struct SampleResponse: Decodable {
+struct LoginResponse: Decodable {
 }

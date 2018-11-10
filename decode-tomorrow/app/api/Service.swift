@@ -10,7 +10,7 @@ import Foundation
 import Moya
 
 enum Service {
-    case sample
+    case login(LoginParams)
 }
 
 extension Service: TargetType {
@@ -23,15 +23,15 @@ extension Service: TargetType {
     
     var path: String {
         switch self {
-        case .sample:
-            return "sample"
+        case .login:
+            return "login"
         }
     }
     
     var method: Moya.Method {
         switch self {
-        case .sample:
-            return .get
+        case .login:
+            return .post
         }
     }
     
@@ -41,8 +41,8 @@ extension Service: TargetType {
     
     var task: Task {
         switch self {
-        case .sample:
-            return .requestPlain
+        case .login(let params):
+            return .requestJSONEncodable(params)
         }
     }
     

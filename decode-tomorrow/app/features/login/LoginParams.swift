@@ -1,5 +1,5 @@
 //
-//  BaseViewController.swift
+//  LoginParams.swift
 //  decode-tomorrow
 //
 //  Created by Mark on 10/11/2018.
@@ -7,8 +7,8 @@
 //
 
 import Foundation
-import UIKit
 
-class BaseViewController<R: BaseRepository>: UIViewController {
-    var repository: R?
+struct LoginParams: Encodable {
+    let username: String
+    let password: String
 }
