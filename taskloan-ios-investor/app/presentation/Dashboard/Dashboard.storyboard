@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Air-Q0-70f">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Dashboard View Controller-->
+        <scene sceneID="CXI-QN-Clo">
+            <objects>
+                <viewController id="Air-Q0-70f" customClass="DashboardViewController" customModule="taskloan_ios_investor" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="13r-Pq-Dk4">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="taskloan logo transparent" translatesAutoresizingMaskIntoConstraints="NO" id="XQa-6q-ZYj">
+                                <rect key="frame" x="0.0" y="36" width="375" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="QcT-nC-f5g"/>
+                                </constraints>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5Sv-BJ-Zuj">
+                                <rect key="frame" x="0.0" y="587" width="375" height="80"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TX2-eB-6kF">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="80"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tY0-kX-dBZ">
+                                                <rect key="frame" x="0.0" y="0.0" width="94" height="80"/>
+                                                <state key="normal" title="Profile"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jJT-92-kkz">
+                                                <rect key="frame" x="94" y="0.0" width="93.5" height="80"/>
+                                                <state key="normal" title="Tasks"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zwI-xH-Yjt">
+                                                <rect key="frame" x="187.5" y="0.0" width="94" height="80"/>
+                                                <state key="normal" title="Loan"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kji-Tk-6nw">
+                                                <rect key="frame" x="281.5" y="0.0" width="93.5" height="80"/>
+                                                <state key="normal" title="Settings"/>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="zwI-xH-Yjt" firstAttribute="width" secondItem="kji-Tk-6nw" secondAttribute="width" id="JP0-pu-bdt"/>
+                                            <constraint firstItem="tY0-kX-dBZ" firstAttribute="width" secondItem="jJT-92-kkz" secondAttribute="width" id="N9U-7N-Zru"/>
+                                            <constraint firstItem="jJT-92-kkz" firstAttribute="width" secondItem="zwI-xH-Yjt" secondAttribute="width" id="hsO-fX-w3R"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="TX2-eB-6kF" secondAttribute="bottom" id="DhC-i4-6xh"/>
+                                    <constraint firstAttribute="height" constant="80" id="KsQ-oH-SDT"/>
+                                    <constraint firstAttribute="trailing" secondItem="TX2-eB-6kF" secondAttribute="trailing" id="OIP-TO-Wsa"/>
+                                    <constraint firstItem="TX2-eB-6kF" firstAttribute="top" secondItem="5Sv-BJ-Zuj" secondAttribute="top" id="eP7-TP-tXH"/>
+                                    <constraint firstItem="TX2-eB-6kF" firstAttribute="leading" secondItem="5Sv-BJ-Zuj" secondAttribute="leading" id="fKt-df-hfg"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="XQa-6q-ZYj" firstAttribute="leading" secondItem="iax-Lr-ajr" secondAttribute="leading" id="Bye-le-8ms"/>
+                            <constraint firstItem="iax-Lr-ajr" firstAttribute="trailing" secondItem="XQa-6q-ZYj" secondAttribute="trailing" id="ECq-0g-kgE"/>
+                            <constraint firstItem="iax-Lr-ajr" firstAttribute="trailing" secondItem="5Sv-BJ-Zuj" secondAttribute="trailing" id="EOz-S6-Uu4"/>
+                            <constraint firstItem="iax-Lr-ajr" firstAttribute="bottom" secondItem="5Sv-BJ-Zuj" secondAttribute="bottom" id="Mi7-A4-yMp"/>
+                            <constraint firstItem="5Sv-BJ-Zuj" firstAttribute="leading" secondItem="iax-Lr-ajr" secondAttribute="leading" id="SRB-HW-w2I"/>
+                            <constraint firstItem="XQa-6q-ZYj" firstAttribute="top" secondItem="iax-Lr-ajr" secondAttribute="top" constant="16" id="lSe-GX-Cwz"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="iax-Lr-ajr"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yXI-lj-9u4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="47" y="142"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="taskloan logo transparent" width="1990" height="512"/>
+    </resources>
+</document>
