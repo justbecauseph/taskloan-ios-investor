@@ -15,7 +15,7 @@ import Foundation
 //Personal
 //Others (please specify)
 
-enum ReasonsForLoaning {
+enum ReasonsForLoaning: CaseIterable {
     case tuitionFee
     case schoolMaterials
     case foodAndTranspo

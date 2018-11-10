@@ -54,11 +54,37 @@ class LoanViewController: UIViewController, Storyboarded {
     
     private var picker: UIPickerView!
     
-    @objc private func dropDownButtonAction() {
-
+    @IBAction func dropDownButtonAction() {
+        let picker = UIPickerView()
+        self.view.addSubview(picker)
+        picker.translatesAutoresizingMaskIntoConstraints = false
+        picker.heightAnchor.constraint(equalToConstant: 40).isActive = true
+        picker.leadingAnchor.constraint(equalTo: view.leadingAnchor).isActive = true
+        picker.trailingAnchor.constraint(equalTo: view.trailingAnchor).isActive = true
+        picker.bottomAnchor.constraint(equalTo: view.bottomAnchor).isActive = true
+        picker.delegate = self
+        picker.dataSource = self
+        
+        
     }
     
     @IBAction func didTapLoanButton(_ sender: Any) {
+    }
+    
+}
+
+extension LoanViewController: UIPickerViewDelegate, UIPickerViewDataSource {
+    
+    func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
+        return ReasonsForLoaning.allCases[component].pickerText
+    }
+    
+    func numberOfComponents(in pickerView: UIPickerView) -> Int {
+        return 1
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
+        return ReasonsForLoaning.allCases.count
     }
     
 }
