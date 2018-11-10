@@ -16,6 +16,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        CredentialsManager.shared.clearToken()
+        initWindow()
         return true
     }
 
@@ -44,3 +46,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 }
 
+extension AppDelegate {
+    
+    func initWindow() {
+        window = UIWindow(frame: UIScreen.main.bounds)
+        let dashboardVc = DashboardViewController.instanciate()
+        let rootVc = UINavigationController(rootViewController: dashboardVc)
+        window?.rootViewController = rootVc
+        window?.makeKeyAndVisible()
+    }
+    
+}

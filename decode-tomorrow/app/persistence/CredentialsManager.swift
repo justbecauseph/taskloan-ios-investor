@@ -11,7 +11,8 @@ import Foundation
 protocol CredentialsManagerTokenStorage {
     static var tokenStorageKey: String { get }
     func storeToken(_ token: String)
-    func getToken() -> String
+    func getToken() -> String?
+    func clearToken()
 }
 
 class CredentialsManager {
@@ -20,7 +21,7 @@ class CredentialsManager {
     
     private let tokenStorage: CredentialsManagerTokenStorage
     
-    var token: String {
+    var token: String? {
         return self.tokenStorage.getToken()
     }
     
@@ -34,18 +35,26 @@ class CredentialsManager {
         self.tokenStorage.storeToken(token)
     }
     
+    func clearToken() {
+        tokenStorage.clearToken()
+    }
+    
 }
 
 extension UserDefaults: CredentialsManagerTokenStorage {
     
     static var tokenStorageKey: String = "tokenStorageKey"
     
-    func getToken() -> String {
-        return self.string(forKey: UserDefaults.tokenStorageKey)!
+    func getToken() -> String? {
+        return self.string(forKey: UserDefaults.tokenStorageKey)
     }
     
     func storeToken(_ token: String) {
         return self.set(token, forKey: UserDefaults.tokenStorageKey)
+    }
+    
+    func clearToken() {
+        self.removeObject(forKey: UserDefaults.tokenStorageKey)
     }
     
 }

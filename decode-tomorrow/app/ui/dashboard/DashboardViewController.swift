@@ -11,8 +11,8 @@ import UIKit
 
 class DashboardViewController: UIViewController, Storyboarded {
     
-    static var storyboardId: String = "Dashboard"
-    static var storyboard: String = "DashboardViewController"
+    static var storyboardId: String = "DashboardViewController"
+    static var storyboard: String = "Dashboard"
     
     // MARK: - Init
     
@@ -20,6 +20,11 @@ class DashboardViewController: UIViewController, Storyboarded {
         super.viewDidLoad()
         initFeatures()
         initViews()
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        if !AppStates.userIsLoggedIn.evaluate { self.navigate(to: .login) }
     }
     
     func initValues(_ name: String) {

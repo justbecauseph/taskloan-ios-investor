@@ -47,7 +47,7 @@ extension Service: TargetType {
     }
     
     var headers: [String : String]? {
-        return [HeaderKeys.authorization.rawValue: CredentialsManager.shared.token]
+        return [HeaderKeys.authorization.rawValue: CredentialsManager.shared.token!]
     }
     
 }

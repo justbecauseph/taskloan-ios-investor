@@ -48,6 +48,7 @@
 		5C41D4162196C8310092BB18 /* DashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C41D4152196C8310092BB18 /* DashboardViewController.swift */; };
 		5C41D4192196C8E90092BB18 /* Destination.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C41D4182196C8E90092BB18 /* Destination.swift */; };
 		5C41D41B2196C9040092BB18 /* UIViewController+navigate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C41D41A2196C9040092BB18 /* UIViewController+navigate.swift */; };
+		5C41D41E2196D4580092BB18 /* AppStates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C41D41D2196D4580092BB18 /* AppStates.swift */; };
 		806FDACB3D1CFDF97896266F /* Pods_decode_tomorrow.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2E5ACC0A7215D5A44B392E8 /* Pods_decode_tomorrow.framework */; };
 /* End PBXBuildFile section */
 
@@ -96,6 +97,7 @@
 		5C41D4152196C8310092BB18 /* DashboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewController.swift; sourceTree = "<group>"; };
 		5C41D4182196C8E90092BB18 /* Destination.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Destination.swift; sourceTree = "<group>"; };
 		5C41D41A2196C9040092BB18 /* UIViewController+navigate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+navigate.swift"; sourceTree = "<group>"; };
+		5C41D41D2196D4580092BB18 /* AppStates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppStates.swift; sourceTree = "<group>"; };
 		B2E5ACC0A7215D5A44B392E8 /* Pods_decode_tomorrow.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_decode_tomorrow.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2647098DFCB5FE47D40D83C /* Pods-decode-tomorrow.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-decode-tomorrow.release.xcconfig"; path = "Pods/Target Support Files/Pods-decode-tomorrow/Pods-decode-tomorrow.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -151,13 +153,14 @@
 		5C0441AB21967E57006251FD /* app */ = {
 			isa = PBXGroup;
 			children = (
-				5C41D4172196C8DD0092BB18 /* navigation */,
 				5C04419821967D5A006251FD /* AppDelegate.swift */,
 				5C0441B221968423006251FD /* api */,
+				5C41D41C2196D43F0092BB18 /* app_states */,
 				5C0441DE219692CB006251FD /* enums */,
 				5C41D3FB2196B1460092BB18 /* errors */,
 				5C41D3E82196A3950092BB18 /* extensions */,
 				5C41D3ED2196A6B10092BB18 /* features */,
+				5C41D4172196C8DD0092BB18 /* navigation */,
 				5C41D4062196BDE30092BB18 /* persistence */,
 				5C41D4032196B98A0092BB18 /* protocols */,
 				5C0441B121968419006251FD /* ui */,
@@ -313,6 +316,14 @@
 				5C41D41A2196C9040092BB18 /* UIViewController+navigate.swift */,
 			);
 			path = navigation;
+			sourceTree = "<group>";
+		};
+		5C41D41C2196D43F0092BB18 /* app_states */ = {
+			isa = PBXGroup;
+			children = (
+				5C41D41D2196D4580092BB18 /* AppStates.swift */,
+			);
+			path = app_states;
 			sourceTree = "<group>";
 		};
 		92268904371A7902E553098C /* Frameworks */ = {
@@ -472,6 +483,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5C41D3EA2196A39F0092BB18 /* Date+.swift in Sources */,
+				5C41D41E2196D4580092BB18 /* AppStates.swift in Sources */,
 				5C41D3EF2196A6BD0092BB18 /* LoginFeature.swift in Sources */,
 				5C41D3F82196ABB70092BB18 /* PrivimiteSequence+mapX.swift in Sources */,
 				5C41D4002196B8650092BB18 /* LoginViewController.swift in Sources */,

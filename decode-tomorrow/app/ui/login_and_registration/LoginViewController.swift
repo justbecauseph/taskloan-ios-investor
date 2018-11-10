@@ -50,7 +50,7 @@ class LoginViewController: UIViewController, Storyboarded {
 extension LoginViewController: LoginFeatureDelegate {
     
     func loginSuccess() {
-        self.navigate(to: .dashboard(name: "Sample"))
+        self.dismiss(animated: true, completion: nil)
     }
     
     func loginFailed() {
