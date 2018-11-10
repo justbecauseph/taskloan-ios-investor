@@ -85,9 +85,68 @@
                     <view key="view" contentMode="scaleToFill" id="WhT-d6-Gvb">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="4ID-kk-Qzf">
+                                <rect key="frame" x="24" y="44" width="327" height="370"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UIf-Yg-xln">
+                                        <rect key="frame" x="0.0" y="0.0" width="327" height="160"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="160" id="4rV-23-IlA"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4G5-KQ-TZf">
+                                        <rect key="frame" x="0.0" y="170" width="327" height="160"/>
+                                        <subviews>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="0AZ-GO-N2K">
+                                                <rect key="frame" x="0.0" y="0.0" width="327" height="160"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                            </textView>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="bottom" secondItem="0AZ-GO-N2K" secondAttribute="bottom" id="7b6-w7-7Ov"/>
+                                            <constraint firstAttribute="trailing" secondItem="0AZ-GO-N2K" secondAttribute="trailing" id="9l4-xF-xLC"/>
+                                            <constraint firstItem="0AZ-GO-N2K" firstAttribute="leading" secondItem="4G5-KQ-TZf" secondAttribute="leading" id="BZk-2J-r2R"/>
+                                            <constraint firstAttribute="height" constant="160" id="ZXZ-3B-BnI"/>
+                                            <constraint firstItem="0AZ-GO-N2K" firstAttribute="top" secondItem="4G5-KQ-TZf" secondAttribute="top" id="g6D-iC-tvw"/>
+                                        </constraints>
+                                    </view>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="jsh-US-7fd">
+                                        <rect key="frame" x="0.0" y="340" width="327" height="30"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s1i-bt-WYL">
+                                                <rect key="frame" x="0.0" y="0.0" width="159.5" height="30"/>
+                                                <state key="normal" title="Contact Task Manager"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rmj-Ac-q0k">
+                                                <rect key="frame" x="167.5" y="0.0" width="159.5" height="30"/>
+                                                <state key="normal" title="Claim"/>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
                         <color key="backgroundColor" red="0.0" green="0.66274509800000003" blue="0.61568627450000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="4ID-kk-Qzf" firstAttribute="leading" secondItem="KvW-S0-RoD" secondAttribute="leading" constant="24" id="gN2-Zh-mAh"/>
+                            <constraint firstItem="KvW-S0-RoD" firstAttribute="trailing" secondItem="4ID-kk-Qzf" secondAttribute="trailing" constant="24" id="lMn-1F-Jmm"/>
+                            <constraint firstItem="4ID-kk-Qzf" firstAttribute="top" secondItem="KvW-S0-RoD" secondAttribute="top" constant="24" id="z4y-2y-hgg"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="KvW-S0-RoD"/>
                     </view>
+                    <connections>
+                        <outlet property="claimButton" destination="rmj-Ac-q0k" id="9OH-2h-uM4"/>
+                        <outlet property="contactButton" destination="s1i-bt-WYL" id="L8x-VP-tFY"/>
+                        <outlet property="descriptionCardView" destination="4G5-KQ-TZf" id="dAf-B8-TK9"/>
+                        <outlet property="descriptionTextView" destination="0AZ-GO-N2K" id="Hh2-Ml-HP3"/>
+                        <outlet property="detailCardView" destination="UIf-Yg-xln" id="Rd7-wO-EPk"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="k4l-ul-UTs" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

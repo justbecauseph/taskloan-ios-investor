@@ -14,7 +14,11 @@ class TaskDetailViewController: UIViewController, Storyboarded {
     static var storyboard: String = "Dashboard"
 
     // MARK: - Outlets
-
+    @IBOutlet weak var detailCardView: UIView!
+    @IBOutlet weak var descriptionCardView: UIView!
+    @IBOutlet weak var descriptionTextView: UITextView!
+    @IBOutlet weak var contactButton: UIButton!
+    @IBOutlet weak var claimButton: UIButton!
     // END OUTLETS
 
     var feature: ClaimTaskFeature?
@@ -23,13 +27,24 @@ class TaskDetailViewController: UIViewController, Storyboarded {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.title = self.taskViewModel.title
+        initViews()
+        initFeature()
     }
     
     private var taskViewModel: TaskViewModel!
     
     func initValues(_ taskViewModel: TaskViewModel) {
         self.taskViewModel = taskViewModel
+    }
+    
+    private func initViews() {
+        detailCardView.cornerRadius = 10
+        descriptionCardView.cornerRadius = 10
+        descriptionCardView.clipsToBounds = true
+        descriptionTextView.font = Fonts.AvenirNextMedium.font(14)
+        descriptionTextView.textColor = Colors.textGray.uiColor
+        contactButton.styleWhiteBorder()
+        claimButton.styleInverted()
     }
 
     private func initFeature() {
