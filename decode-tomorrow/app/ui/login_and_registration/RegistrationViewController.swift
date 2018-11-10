@@ -69,9 +69,7 @@ class RegistrationViewController: UIViewController, Storyboarded {
         showHUD()
         
         self.navigate(to: .documentUpload)
-        
-        return
-        
+ 
         let hc = "student"
         
         guard let mobileNumber = phoneNumberTextField.text?.trim() else {

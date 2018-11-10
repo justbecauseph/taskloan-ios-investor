@@ -408,14 +408,28 @@
                                                     <constraint firstAttribute="height" constant="200" id="Duy-76-lnf"/>
                                                 </constraints>
                                             </imageView>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xne-e4-dVV">
+                                                <rect key="frame" x="48" y="437" width="279" height="160"/>
+                                                <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="12"/>
+                                                <state key="normal" title="Tap to Upload Photo">
+                                                    <color key="titleColor" red="0.0" green="0.66274509800000003" blue="0.61568627450000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="didTapPhotoButton:" destination="c7x-O7-4jx" eventType="touchUpInside" id="rXP-bo-VKF"/>
+                                                </connections>
+                                            </button>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstAttribute="trailing" secondItem="0BB-An-2Zo" secondAttribute="trailing" constant="48" id="1az-LM-Esz"/>
                                             <constraint firstItem="Tdf-Hd-h9U" firstAttribute="centerX" secondItem="JaB-3E-f0D" secondAttribute="centerX" id="9UV-u8-Of0"/>
                                             <constraint firstItem="0BB-An-2Zo" firstAttribute="top" secondItem="Tdf-Hd-h9U" secondAttribute="bottom" constant="48" id="CQt-K6-v67"/>
+                                            <constraint firstItem="Xne-e4-dVV" firstAttribute="width" secondItem="xsR-Oa-sMG" secondAttribute="width" id="MiL-OP-9ZM"/>
+                                            <constraint firstItem="Xne-e4-dVV" firstAttribute="height" secondItem="xsR-Oa-sMG" secondAttribute="height" id="gMc-Gq-sAc"/>
                                             <constraint firstItem="Tdf-Hd-h9U" firstAttribute="top" secondItem="JaB-3E-f0D" secondAttribute="top" constant="88" id="iOm-hW-xRI"/>
                                             <constraint firstItem="0BB-An-2Zo" firstAttribute="leading" secondItem="JaB-3E-f0D" secondAttribute="leading" constant="48" id="qcc-lT-Q8a"/>
+                                            <constraint firstItem="Xne-e4-dVV" firstAttribute="centerY" secondItem="xsR-Oa-sMG" secondAttribute="centerY" id="swm-Vf-TUN"/>
+                                            <constraint firstItem="Xne-e4-dVV" firstAttribute="centerX" secondItem="xsR-Oa-sMG" secondAttribute="centerX" id="tW1-Za-rOt"/>
                                             <constraint firstAttribute="bottom" secondItem="V6I-OV-87c" secondAttribute="bottom" constant="61.5" id="zQV-e3-xbK"/>
                                         </constraints>
                                     </view>

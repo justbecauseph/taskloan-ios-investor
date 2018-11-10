@@ -44,10 +44,43 @@ class DocumentUploadViewController: UIViewController, Storyboarded {
     
     // MARK: - Actions
     
+    @IBAction func didTapPhotoButton(_ sender: Any) {
+        let alert = UIAlertController(title: nil, message: nil, preferredStyle: .actionSheet)
+        let useCamera = UIAlertAction(title: "Use Camera", style: .default) { _ in self.presentImagePicker(.camera) }
+        let useGallery = UIAlertAction(title: "Select from Gallery", style: .default) { _ in self.presentImagePicker(.savedPhotosAlbum) }
+        alert.addAction(useCamera)
+        alert.addAction(useGallery)
+        self.present(alert, animated: true, completion: nil)
+    }
+    
+    fileprivate func presentImagePicker(_ sourceType: UIImagePickerController.SourceType) {
+        let vc = UIImagePickerController()
+        vc.sourceType = sourceType
+        vc.allowsEditing = true
+        vc.delegate = self
+        present(vc, animated: true)
+    }
+    
     @IBAction func didTapVerifyButton(_ sender: Any) {
         guard let documentImage = documentImageView.image else { return }
         guard let data = documentImage.jpegData(compressionQuality: 0.50) else { return }
         self.feature?.uploadDocument(data)
+    }
+    
+}
+
+extension DocumentUploadViewController: UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+    
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
+        picker.dismiss(animated: true)
+        
+        guard let image = info[.editedImage] as? UIImage else {
+            print("No image found")
+            return
+        }
+        
+        // print out the image size as a test
+        self.documentImageView.image = image
     }
     
 }
