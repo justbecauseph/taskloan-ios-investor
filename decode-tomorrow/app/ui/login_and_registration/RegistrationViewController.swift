@@ -31,7 +31,19 @@ class RegistrationViewController: UIViewController, Storyboarded {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        initViews()
         initFeature()
+    }
+    
+    private func initViews() {
+        phoneNumberTextField.style()
+        passwordTextField.style()
+        confirmPasswordTextField.style()
+        emailTextField.style()
+        nameTextField.style()
+        addressTextField.style()
+        schoolTextField.style()
+        registerButton.style()
     }
     
     private func initFeature() {

@@ -124,11 +124,17 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="V0h-aL-dM9">
-                                <rect key="frame" x="24" y="117.5" width="327" height="432"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="V0h-aL-dM9">
+                                <rect key="frame" x="24" y="77.5" width="327" height="512.5"/>
                                 <subviews>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Phone Number" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8qD-LC-Oe2">
-                                        <rect key="frame" x="0.0" y="0.0" width="327" height="32"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mobile Number" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YxO-Bn-UPV">
+                                        <rect key="frame" x="0.0" y="0.0" width="327" height="19.5"/>
+                                        <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="14"/>
+                                        <color key="textColor" red="0.43921568630000002" green="0.43921568630000002" blue="0.43921568630000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Mobile Number" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8qD-LC-Oe2">
+                                        <rect key="frame" x="0.0" y="27.5" width="327" height="32"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="32" id="6OI-a2-JYp"/>
                                         </constraints>
@@ -136,8 +142,14 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="phonePad" textContentType="tel"/>
                                     </textField>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Password" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="igH-gg-GoP">
+                                        <rect key="frame" x="0.0" y="67.5" width="327" height="19.5"/>
+                                        <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="14"/>
+                                        <color key="textColor" red="0.43921568630000002" green="0.43921568630000002" blue="0.43921568630000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ivi-0B-3zz">
-                                        <rect key="frame" x="0.0" y="48" width="327" height="32"/>
+                                        <rect key="frame" x="0.0" y="95" width="327" height="32"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="32" id="Jqc-ea-KeV"/>
                                         </constraints>
@@ -145,8 +157,14 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" secureTextEntry="YES" textContentType="password"/>
                                     </textField>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Confirm Password" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d6l-xd-m2U">
+                                        <rect key="frame" x="0.0" y="135" width="327" height="19.5"/>
+                                        <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="14"/>
+                                        <color key="textColor" red="0.43921568630000002" green="0.43921568630000002" blue="0.43921568630000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Confirm Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Gzc-Yh-Dnl">
-                                        <rect key="frame" x="0.0" y="96" width="327" height="32"/>
+                                        <rect key="frame" x="0.0" y="162.5" width="327" height="32"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="32" id="Zt5-TK-y3N"/>
                                         </constraints>
@@ -154,8 +172,14 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" secureTextEntry="YES" textContentType="password"/>
                                     </textField>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RJo-xI-k7g">
+                                        <rect key="frame" x="0.0" y="202.5" width="327" height="19.5"/>
+                                        <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="14"/>
+                                        <color key="textColor" red="0.43921568630000002" green="0.43921568630000002" blue="0.43921568630000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9Eu-eQ-nRl">
-                                        <rect key="frame" x="0.0" y="144" width="327" height="32"/>
+                                        <rect key="frame" x="0.0" y="230" width="327" height="32"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="32" id="LAk-JI-Goo"/>
                                         </constraints>
@@ -163,8 +187,14 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" textContentType="email"/>
                                     </textField>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kTW-on-8lb">
-                                        <rect key="frame" x="0.0" y="192" width="327" height="32"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Full Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ijk-1O-v23">
+                                        <rect key="frame" x="0.0" y="270" width="327" height="19.5"/>
+                                        <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="14"/>
+                                        <color key="textColor" red="0.43921568630000002" green="0.43921568630000002" blue="0.43921568630000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Full Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kTW-on-8lb">
+                                        <rect key="frame" x="0.0" y="297.5" width="327" height="32"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="32" id="Qwp-W6-uPN"/>
                                         </constraints>
@@ -172,8 +202,14 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" textContentType="name"/>
                                     </textField>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Address" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NRT-Jt-qVy">
+                                        <rect key="frame" x="0.0" y="337.5" width="327" height="19.5"/>
+                                        <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="14"/>
+                                        <color key="textColor" red="0.43921568630000002" green="0.43921568630000002" blue="0.43921568630000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Address" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mTA-tX-ysP">
-                                        <rect key="frame" x="0.0" y="240" width="327" height="32"/>
+                                        <rect key="frame" x="0.0" y="365" width="327" height="32"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="32" id="EmF-nD-3A8"/>
                                         </constraints>
@@ -181,8 +217,14 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="emailAddress"/>
                                     </textField>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="School" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qw1-8l-PCK">
+                                        <rect key="frame" x="0.0" y="405" width="327" height="19.5"/>
+                                        <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="14"/>
+                                        <color key="textColor" red="0.43921568630000002" green="0.43921568630000002" blue="0.43921568630000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="School" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="57U-Qe-mNr">
-                                        <rect key="frame" x="0.0" y="288" width="327" height="32"/>
+                                        <rect key="frame" x="0.0" y="432.5" width="327" height="32"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="32" id="enp-di-RVh"/>
                                         </constraints>
@@ -191,24 +233,37 @@
                                         <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no"/>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6rr-rD-hzG">
-                                        <rect key="frame" x="0.0" y="336" width="327" height="40"/>
+                                        <rect key="frame" x="0.0" y="472.5" width="327" height="40"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="40" id="dwN-hO-uWa"/>
                                         </constraints>
-                                        <state key="normal" title="CONFIRM"/>
+                                        <state key="normal" title="Sign Up"/>
                                         <connections>
                                             <action selector="didTapConfirmButton:" destination="DBo-qD-MEp" eventType="touchUpInside" id="q5Y-QI-ZAN"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hag-fm-Ab1">
-                                        <rect key="frame" x="0.0" y="392" width="327" height="40"/>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="FWb-uA-ZzX">
+                                <rect key="frame" x="81" y="587" width="213" height="40"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Already have an account?" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aAn-tX-Tc4">
+                                        <rect key="frame" x="0.0" y="0.0" width="165" height="40"/>
+                                        <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="14"/>
+                                        <color key="textColor" red="0.43921568630000002" green="0.43921568630000002" blue="0.43921568630000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PsN-6U-wXt">
+                                        <rect key="frame" x="169" y="0.0" width="44" height="40"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="40" id="uhh-Yl-6pL"/>
+                                            <constraint firstAttribute="height" constant="40" id="eGH-cO-ETk"/>
                                         </constraints>
-                                        <state key="normal" title="CANCEL"/>
+                                        <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="14"/>
+                                        <state key="normal" title="Log In.">
+                                            <color key="titleColor" red="0.0" green="0.66274509800000003" blue="0.61568627450000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
                                         <connections>
-                                            <action selector="didTapCancelButton:" destination="DBo-qD-MEp" eventType="touchUpInside" id="eTg-bv-Z3E"/>
-                                            <action selector="didTapConfirmButton:" destination="DBo-qD-MEp" eventType="touchUpInside" id="Kkk-rm-Jzy"/>
+                                            <action selector="didTapCancelButton:" destination="DBo-qD-MEp" eventType="touchUpInside" id="A4s-Re-AWL"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -217,7 +272,9 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="V0h-aL-dM9" firstAttribute="leading" secondItem="Eim-2T-IVE" secondAttribute="leading" constant="24" id="12O-1S-pbf"/>
+                            <constraint firstItem="FWb-uA-ZzX" firstAttribute="centerX" secondItem="YSR-F9-wdU" secondAttribute="centerX" id="GVK-2r-TFd"/>
                             <constraint firstItem="Eim-2T-IVE" firstAttribute="trailing" secondItem="V0h-aL-dM9" secondAttribute="trailing" constant="24" id="HQ3-nQ-Gfv"/>
+                            <constraint firstItem="Eim-2T-IVE" firstAttribute="bottom" secondItem="FWb-uA-ZzX" secondAttribute="bottom" constant="40" id="PAm-Qz-YAj"/>
                             <constraint firstItem="V0h-aL-dM9" firstAttribute="centerY" secondItem="YSR-F9-wdU" secondAttribute="centerY" id="b0V-sl-pNS"/>
                             <constraint firstItem="V0h-aL-dM9" firstAttribute="centerX" secondItem="YSR-F9-wdU" secondAttribute="centerX" id="rKP-kY-uhe"/>
                         </constraints>
