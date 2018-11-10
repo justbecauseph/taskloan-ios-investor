@@ -28,7 +28,7 @@ class TasksListTableDataSource: NSObject, UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: TasksListTableViewCell.identifier, for: indexPath) as! TasksListTableViewCell
         let task = self.tasks[indexPath.row]
-        cell.taskNameLabel.text = task.title
+        cell.taskTitleLabel.text = task.title
         return cell
     }
     
