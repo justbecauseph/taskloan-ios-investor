@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import FontAwesome_swift
 
 class TasksListTableViewCell: UITableViewCell {
     
@@ -15,10 +16,14 @@ class TasksListTableViewCell: UITableViewCell {
     // MARK: - Outlets
     @IBOutlet weak var baseView: UIView!
     @IBOutlet weak var taskTitleLabel: UILabel!
-    @IBOutlet weak var nameAndHoursLabel: UILabel!
+    @IBOutlet weak var nameLabel: UILabel!
+    @IBOutlet weak var hoursLabel: UILabel!
     @IBOutlet weak var paletteView: UIView!
     @IBOutlet weak var amountView: UIView!
     @IBOutlet weak var amountValueLabel: UILabel!
+    
+    @IBOutlet weak var personIcon: UILabel!
+    @IBOutlet weak var clockLabel: UILabel!
     // MARK: - Init
     
     override func awakeFromNib() {
@@ -37,6 +42,12 @@ class TasksListTableViewCell: UITableViewCell {
         baseView.cornerRadius = 10
         paletteView.cornerRadius = 5
         amountView.cornerRadius = 5
+        
+        personIcon.font = UIFont.fontAwesome(ofSize: 12, style: .regular)
+        personIcon.text = String.fontAwesomeIcon(name: .user)
+        
+        clockLabel.font = UIFont.fontAwesome(ofSize: 12, style: .regular)
+        clockLabel.text = String.fontAwesomeIcon(name: .clock)
     }
     
 }

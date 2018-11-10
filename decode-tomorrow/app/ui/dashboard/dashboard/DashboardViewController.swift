@@ -22,7 +22,7 @@ class DashboardViewController: UIViewController, Storyboarded {
     private var tasksListTableDataSource: TasksListTableDataSource?
     
     // MARK: - Init
-    
+
     private var loginFeatureDelegate: LoginFeatureDelegate?
     private var tasksListFeature: TasksListFeature?
     
@@ -52,6 +52,7 @@ class DashboardViewController: UIViewController, Storyboarded {
         self.tasksListTableView.delegate = self
         self.tasksListTableDataSource = TasksListTableDataSource()
         self.tasksListTableView.dataSource = self.tasksListTableDataSource
+        self.tasksListTableView.separatorStyle = .none
         
         refreshControl.addTarget(self, action: #selector(refreshControlAction), for: .valueChanged)
         self.tasksListTableView.refreshControl = refreshControl
@@ -84,6 +85,10 @@ extension DashboardViewController: UITableViewDelegate {
         guard let dataSource = self.tasksListTableDataSource else { return }
         let task = dataSource.tasks[indexPath.row]
         self.navigate(to: .taskDetails(task))
+    }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 120.0
     }
     
 }
