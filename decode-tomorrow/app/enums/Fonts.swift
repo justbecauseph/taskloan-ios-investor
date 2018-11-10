@@ -11,23 +11,21 @@ import UIKit
 
 enum Fonts: String {
     
-    case IBMPlexSansBold
-    case IBMPlexSansBoldItalic
-    case IBMPlexSansExtraLight
-    case IBMPlexSansExtraLightItalic
-    case IBMPlexSansItalic
-    case IBMPlexSansLight
-    case IBMPlexSansLightItalic
-    case IBMPlexSansMedium
-    case IBMPlexSansMediumItalic
-    case IBMPlexSansRegular
-    case IBMPlexSansSemiBold
-    case IBMPlexSansSemiBoldItalic
-    case IBMPlexSansThin
-    case IBMPlexSansThinItalic
+    case AvenirNextBold
+    case AvenirNextBoldItalic
+    case AvenirNextDemiBold
+    case AvenirNextDemiBoldItalic
+    case AvenirNextHeavy
+    case AvenirNextHeavyItalic
+    case AvenirNextItalic
+    case AvenirNextMedium
+    case AvenirNextMediumItalic
+    case AvenirNextRegular
+    case AvenirNextUltraLight
+    case AvenirNextUltraLightItalic
     
     func font(_ size: CGFloat) -> UIFont {
-        let name = self.rawValue.replacingOccurrences(of: "IBMPlexSans", with: "IBMPlexSans-")
+        let name = self.rawValue.replacingOccurrences(of: "AvenirNext", with: "AvenirNext-")
         return UIFont(name: name, size: size) ?? UIFont.systemFont(ofSize: size)
     }
     

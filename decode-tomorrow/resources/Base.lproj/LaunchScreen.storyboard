@@ -17,11 +17,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo_square" translatesAutoresizingMaskIntoConstraints="NO" id="bp4-tg-WZf">
-                                <rect key="frame" x="87.5" y="233.5" width="200" height="200"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo_banner" translatesAutoresizingMaskIntoConstraints="NO" id="bp4-tg-WZf">
+                                <rect key="frame" x="47.5" y="297.5" width="280" height="72"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="200" id="cpw-KF-w1D"/>
-                                    <constraint firstAttribute="width" constant="200" id="wE8-sW-wVb"/>
+                                    <constraint firstAttribute="height" constant="72" id="cpw-KF-w1D"/>
+                                    <constraint firstAttribute="width" constant="280" id="wE8-sW-wVb"/>
                                 </constraints>
                             </imageView>
                         </subviews>
@@ -39,6 +39,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="logo_square" width="663" height="663"/>
+        <image name="logo_banner" width="995" height="256"/>
     </resources>
 </document>

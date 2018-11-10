@@ -43,6 +43,9 @@ class LoginViewController: UIViewController, Storyboarded {
     }
     
     private func initViews() {
+        emailTextField.style()
+        passwordTextField.style()
+        loginButton.style()
     }
     
     // MARK: - Actions
