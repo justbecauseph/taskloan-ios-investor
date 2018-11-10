@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Login View Controller-->
+        <scene sceneID="CBb-bk-g4H">
+            <objects>
+                <viewController storyboardIdentifier="LoginViewController" id="w48-yb-RcH" customClass="LoginViewController" customModule="decode_tomorrow" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="nYO-IA-5CQ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="Rcd-1E-Fiz">
+                                <rect key="frame" x="24" y="266.5" width="327" height="134"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="a5I-YD-bQq">
+                                        <rect key="frame" x="0.0" y="0.0" width="327" height="32"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="32" id="8PK-9A-5Cv"/>
+                                        </constraints>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" textContentType="email"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0Jv-ld-gf8">
+                                        <rect key="frame" x="0.0" y="47" width="327" height="32"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="32" id="Tob-KV-dN2"/>
+                                        </constraints>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" textContentType="password"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JSH-HH-Ek8">
+                                        <rect key="frame" x="0.0" y="94" width="327" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="Cly-oK-rUw"/>
+                                        </constraints>
+                                        <state key="normal" title="LOGIN"/>
+                                        <connections>
+                                            <action selector="didTapLoginButton:" destination="w48-yb-RcH" eventType="touchUpInside" id="xkH-hJ-WbV"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Rcd-1E-Fiz" firstAttribute="leading" secondItem="cqZ-k7-TAH" secondAttribute="leading" constant="24" id="PQm-Eh-rw6"/>
+                            <constraint firstItem="cqZ-k7-TAH" firstAttribute="trailing" secondItem="Rcd-1E-Fiz" secondAttribute="trailing" constant="24" id="Vsz-qh-8ve"/>
+                            <constraint firstItem="Rcd-1E-Fiz" firstAttribute="centerX" secondItem="nYO-IA-5CQ" secondAttribute="centerX" id="oLc-fr-rSe"/>
+                            <constraint firstItem="Rcd-1E-Fiz" firstAttribute="centerY" secondItem="nYO-IA-5CQ" secondAttribute="centerY" id="shl-ao-xKR"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="cqZ-k7-TAH"/>
+                    </view>
+                    <connections>
+                        <outlet property="emailTextField" destination="a5I-YD-bQq" id="NDb-yA-61w"/>
+                        <outlet property="loginButton" destination="JSH-HH-Ek8" id="4lg-bg-uot"/>
+                        <outlet property="passwordTextField" destination="0Jv-ld-gf8" id="8dA-uv-RYz"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PvL-Bg-FNs" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>

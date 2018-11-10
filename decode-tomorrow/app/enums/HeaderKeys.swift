@@ -1,5 +1,5 @@
 //
-//  LoginParams.swift
+//  HeaderKeys.swift
 //  decode-tomorrow
 //
 //  Created by Mark on 10/11/2018.
@@ -8,7 +8,8 @@
 
 import Foundation
 
-struct LoginParams: Encodable {
-    let email: String
-    let password: String
+enum HeaderKeys: String {
+    
+    case authorization = "Authorization"
+    
 }

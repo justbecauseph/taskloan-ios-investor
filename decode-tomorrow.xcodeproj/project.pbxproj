@@ -39,6 +39,15 @@
 		5C41D3F82196ABB70092BB18 /* PrivimiteSequence+mapX.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C41D3F72196ABB70092BB18 /* PrivimiteSequence+mapX.swift */; };
 		5C41D3FA2196AE3A0092BB18 /* PrimitiveSequence+mapErrors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C41D3F92196AE3A0092BB18 /* PrimitiveSequence+mapErrors.swift */; };
 		5C41D3FD2196B16A0092BB18 /* ApiError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C41D3FC2196B16A0092BB18 /* ApiError.swift */; };
+		5C41D4002196B8650092BB18 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C41D3FF2196B8650092BB18 /* LoginViewController.swift */; };
+		5C41D4022196B97C0092BB18 /* LoginAndRegistration.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5C41D4012196B97C0092BB18 /* LoginAndRegistration.storyboard */; };
+		5C41D4052196B9A40092BB18 /* Storyboarded.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C41D4042196B9A40092BB18 /* Storyboarded.swift */; };
+		5C41D40A2196BE870092BB18 /* CredentialsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C41D4092196BE870092BB18 /* CredentialsManager.swift */; };
+		5C41D40C2196C1F80092BB18 /* HeaderKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C41D40B2196C1F80092BB18 /* HeaderKeys.swift */; };
+		5C41D4142196C8230092BB18 /* Dashboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5C41D4132196C8230092BB18 /* Dashboard.storyboard */; };
+		5C41D4162196C8310092BB18 /* DashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C41D4152196C8310092BB18 /* DashboardViewController.swift */; };
+		5C41D4192196C8E90092BB18 /* Destination.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C41D4182196C8E90092BB18 /* Destination.swift */; };
+		5C41D41B2196C9040092BB18 /* UIViewController+navigate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C41D41A2196C9040092BB18 /* UIViewController+navigate.swift */; };
 		806FDACB3D1CFDF97896266F /* Pods_decode_tomorrow.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2E5ACC0A7215D5A44B392E8 /* Pods_decode_tomorrow.framework */; };
 /* End PBXBuildFile section */
 
@@ -78,6 +87,15 @@
 		5C41D3F72196ABB70092BB18 /* PrivimiteSequence+mapX.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PrivimiteSequence+mapX.swift"; sourceTree = "<group>"; };
 		5C41D3F92196AE3A0092BB18 /* PrimitiveSequence+mapErrors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PrimitiveSequence+mapErrors.swift"; sourceTree = "<group>"; };
 		5C41D3FC2196B16A0092BB18 /* ApiError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiError.swift; sourceTree = "<group>"; };
+		5C41D3FF2196B8650092BB18 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		5C41D4012196B97C0092BB18 /* LoginAndRegistration.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LoginAndRegistration.storyboard; sourceTree = "<group>"; };
+		5C41D4042196B9A40092BB18 /* Storyboarded.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storyboarded.swift; sourceTree = "<group>"; };
+		5C41D4092196BE870092BB18 /* CredentialsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CredentialsManager.swift; sourceTree = "<group>"; };
+		5C41D40B2196C1F80092BB18 /* HeaderKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderKeys.swift; sourceTree = "<group>"; };
+		5C41D4132196C8230092BB18 /* Dashboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Dashboard.storyboard; sourceTree = "<group>"; };
+		5C41D4152196C8310092BB18 /* DashboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewController.swift; sourceTree = "<group>"; };
+		5C41D4182196C8E90092BB18 /* Destination.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Destination.swift; sourceTree = "<group>"; };
+		5C41D41A2196C9040092BB18 /* UIViewController+navigate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+navigate.swift"; sourceTree = "<group>"; };
 		B2E5ACC0A7215D5A44B392E8 /* Pods_decode_tomorrow.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_decode_tomorrow.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2647098DFCB5FE47D40D83C /* Pods-decode-tomorrow.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-decode-tomorrow.release.xcconfig"; path = "Pods/Target Support Files/Pods-decode-tomorrow/Pods-decode-tomorrow.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -133,12 +151,15 @@
 		5C0441AB21967E57006251FD /* app */ = {
 			isa = PBXGroup;
 			children = (
+				5C41D4172196C8DD0092BB18 /* navigation */,
 				5C04419821967D5A006251FD /* AppDelegate.swift */,
 				5C0441B221968423006251FD /* api */,
 				5C0441DE219692CB006251FD /* enums */,
 				5C41D3FB2196B1460092BB18 /* errors */,
 				5C41D3E82196A3950092BB18 /* extensions */,
 				5C41D3ED2196A6B10092BB18 /* features */,
+				5C41D4062196BDE30092BB18 /* persistence */,
+				5C41D4032196B98A0092BB18 /* protocols */,
 				5C0441B121968419006251FD /* ui */,
 			);
 			path = app;
@@ -166,6 +187,8 @@
 		5C0441B121968419006251FD /* ui */ = {
 			isa = PBXGroup;
 			children = (
+				5C41D4122196C8180092BB18 /* dashboard */,
+				5C41D3FE2196B8560092BB18 /* login_and_registration */,
 				5C0441AE21967E7F006251FD /* main */,
 			);
 			path = ui;
@@ -207,6 +230,7 @@
 			children = (
 				5C0441DF219692D9006251FD /* Fonts.swift */,
 				5C0441E121969326006251FD /* DateTimeFormats.swift */,
+				5C41D40B2196C1F80092BB18 /* HeaderKeys.swift */,
 			);
 			path = enums;
 			sourceTree = "<group>";
@@ -246,6 +270,49 @@
 				5C41D3FC2196B16A0092BB18 /* ApiError.swift */,
 			);
 			path = errors;
+			sourceTree = "<group>";
+		};
+		5C41D3FE2196B8560092BB18 /* login_and_registration */ = {
+			isa = PBXGroup;
+			children = (
+				5C41D4012196B97C0092BB18 /* LoginAndRegistration.storyboard */,
+				5C41D3FF2196B8650092BB18 /* LoginViewController.swift */,
+			);
+			path = login_and_registration;
+			sourceTree = "<group>";
+		};
+		5C41D4032196B98A0092BB18 /* protocols */ = {
+			isa = PBXGroup;
+			children = (
+				5C41D4042196B9A40092BB18 /* Storyboarded.swift */,
+			);
+			path = protocols;
+			sourceTree = "<group>";
+		};
+		5C41D4062196BDE30092BB18 /* persistence */ = {
+			isa = PBXGroup;
+			children = (
+				5C41D4092196BE870092BB18 /* CredentialsManager.swift */,
+			);
+			path = persistence;
+			sourceTree = "<group>";
+		};
+		5C41D4122196C8180092BB18 /* dashboard */ = {
+			isa = PBXGroup;
+			children = (
+				5C41D4132196C8230092BB18 /* Dashboard.storyboard */,
+				5C41D4152196C8310092BB18 /* DashboardViewController.swift */,
+			);
+			path = dashboard;
+			sourceTree = "<group>";
+		};
+		5C41D4172196C8DD0092BB18 /* navigation */ = {
+			isa = PBXGroup;
+			children = (
+				5C41D4182196C8E90092BB18 /* Destination.swift */,
+				5C41D41A2196C9040092BB18 /* UIViewController+navigate.swift */,
+			);
+			path = navigation;
 			sourceTree = "<group>";
 		};
 		92268904371A7902E553098C /* Frameworks */ = {
@@ -336,9 +403,11 @@
 				5C0441D2219690D6006251FD /* IBMPlexSans-ThinItalic.ttf in Resources */,
 				5C0441D4219690D6006251FD /* IBMPlexSans-LightItalic.ttf in Resources */,
 				5C0441A021967D5C006251FD /* Assets.xcassets in Resources */,
+				5C41D4142196C8230092BB18 /* Dashboard.storyboard in Resources */,
 				5C0441D7219690D6006251FD /* IBMPlexSans-ExtraLight.ttf in Resources */,
 				5C0441DC219690D6006251FD /* IBMPlexSans-Thin.ttf in Resources */,
 				5C0441D8219690D6006251FD /* IBMPlexSans-Regular.ttf in Resources */,
+				5C41D4022196B97C0092BB18 /* LoginAndRegistration.storyboard in Resources */,
 				5C0441DB219690D6006251FD /* IBMPlexSans-Light.ttf in Resources */,
 				5C0441DA219690D6006251FD /* IBMPlexSans-BoldItalic.ttf in Resources */,
 				5C0441CF219690D6006251FD /* IBMPlexSans-MediumItalic.ttf in Resources */,
@@ -405,7 +474,12 @@
 				5C41D3EA2196A39F0092BB18 /* Date+.swift in Sources */,
 				5C41D3EF2196A6BD0092BB18 /* LoginFeature.swift in Sources */,
 				5C41D3F82196ABB70092BB18 /* PrivimiteSequence+mapX.swift in Sources */,
+				5C41D4002196B8650092BB18 /* LoginViewController.swift in Sources */,
 				5C41D3F42196A81E0092BB18 /* LoginResponse.swift in Sources */,
+				5C41D40A2196BE870092BB18 /* CredentialsManager.swift in Sources */,
+				5C41D40C2196C1F80092BB18 /* HeaderKeys.swift in Sources */,
+				5C41D4162196C8310092BB18 /* DashboardViewController.swift in Sources */,
+				5C41D41B2196C9040092BB18 /* UIViewController+navigate.swift in Sources */,
 				5C41D3F62196A8B30092BB18 /* LoginParams.swift in Sources */,
 				5C0441E0219692D9006251FD /* Fonts.swift in Sources */,
 				5C0441E221969326006251FD /* DateTimeFormats.swift in Sources */,
@@ -416,6 +490,8 @@
 				5C0441B4219684C8006251FD /* Service.swift in Sources */,
 				5C41D3FA2196AE3A0092BB18 /* PrimitiveSequence+mapErrors.swift in Sources */,
 				5C41D3EC2196A4140092BB18 /* String+.swift in Sources */,
+				5C41D4052196B9A40092BB18 /* Storyboarded.swift in Sources */,
+				5C41D4192196C8E90092BB18 /* Destination.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

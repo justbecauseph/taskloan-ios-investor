@@ -9,30 +9,25 @@
 import Foundation
 import RxSwift
 
-protocol LoginFeatureDelegate {
+protocol LoginFeatureDelegate: class {
     func loginSuccess()
     func loginFailed()
 }
 
 class LoginFeature  {
     
-    let provider = Provider.sharedRx
-    let dBag = DisposeBag()
+    let credentialsManager = CredentialsManager.shared
     
-    var delegate: LoginFeatureDelegate?
+    weak var delegate: LoginFeatureDelegate?
     
-    func login(username: String, password: String) {
-        let params = LoginParams(username: username, password: password)
-        provider.request(.login(params)).mapX(LoginResponse.self, dBag: dBag) { (event) in
-            switch event {
-            case .next(let value):
-                print(value)
-            case .error(let error):
-                print(error.localizedDescription)
-            case .completed:
-                break
-            }
-        }
+    init(_ delegate: LoginFeatureDelegate) {
+        self.delegate = delegate
+    }
+    
+    func login(email: String, password: String) {
+        let params = LoginParams(email: email, password: password)
+        credentialsManager.store(params)
+        delegate?.loginSuccess()
     }
     
 }
