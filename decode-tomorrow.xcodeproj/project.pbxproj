@@ -35,6 +35,8 @@
 		5C0441E921969D5D006251FD /* LoginRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C0441E821969D5D006251FD /* LoginRepository.swift */; };
 		5C0441EC21969EE2006251FD /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C0441EB21969EE2006251FD /* BaseViewController.swift */; };
 		5C0441EE21969F01006251FD /* BaseRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C0441ED21969F01006251FD /* BaseRepository.swift */; };
+		5C41D3EA2196A39F0092BB18 /* Date+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C41D3E92196A39F0092BB18 /* Date+.swift */; };
+		5C41D3EC2196A4140092BB18 /* String+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C41D3EB2196A4140092BB18 /* String+.swift */; };
 		806FDACB3D1CFDF97896266F /* Pods_decode_tomorrow.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2E5ACC0A7215D5A44B392E8 /* Pods_decode_tomorrow.framework */; };
 /* End PBXBuildFile section */
 
@@ -70,6 +72,8 @@
 		5C0441E821969D5D006251FD /* LoginRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRepository.swift; sourceTree = "<group>"; };
 		5C0441EB21969EE2006251FD /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		5C0441ED21969F01006251FD /* BaseRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseRepository.swift; sourceTree = "<group>"; };
+		5C41D3E92196A39F0092BB18 /* Date+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+.swift"; sourceTree = "<group>"; };
+		5C41D3EB2196A4140092BB18 /* String+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+.swift"; sourceTree = "<group>"; };
 		B2E5ACC0A7215D5A44B392E8 /* Pods_decode_tomorrow.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_decode_tomorrow.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2647098DFCB5FE47D40D83C /* Pods-decode-tomorrow.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-decode-tomorrow.release.xcconfig"; path = "Pods/Target Support Files/Pods-decode-tomorrow/Pods-decode-tomorrow.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -125,6 +129,7 @@
 		5C0441AB21967E57006251FD /* app */ = {
 			isa = PBXGroup;
 			children = (
+				5C41D3E82196A3950092BB18 /* extension */,
 				5C04419821967D5A006251FD /* AppDelegate.swift */,
 				5C0441B221968423006251FD /* api */,
 				5C0441EA21969EBE006251FD /* base_classes */,
@@ -226,6 +231,15 @@
 				5C0441EB21969EE2006251FD /* BaseViewController.swift */,
 			);
 			path = base_classes;
+			sourceTree = "<group>";
+		};
+		5C41D3E82196A3950092BB18 /* extension */ = {
+			isa = PBXGroup;
+			children = (
+				5C41D3E92196A39F0092BB18 /* Date+.swift */,
+				5C41D3EB2196A4140092BB18 /* String+.swift */,
+			);
+			path = extension;
 			sourceTree = "<group>";
 		};
 		92268904371A7902E553098C /* Frameworks */ = {
@@ -382,6 +396,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5C41D3EA2196A39F0092BB18 /* Date+.swift in Sources */,
 				5C0441E0219692D9006251FD /* Fonts.swift in Sources */,
 				5C0441E221969326006251FD /* DateTimeFormats.swift in Sources */,
 				5C0441B6219684D0006251FD /* Provider.swift in Sources */,
@@ -391,6 +406,7 @@
 				5C04419921967D5A006251FD /* AppDelegate.swift in Sources */,
 				5C0441B4219684C8006251FD /* Service.swift in Sources */,
 				5C0441EE21969F01006251FD /* BaseRepository.swift in Sources */,
+				5C41D3EC2196A4140092BB18 /* String+.swift in Sources */,
 				5C0441E921969D5D006251FD /* LoginRepository.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
