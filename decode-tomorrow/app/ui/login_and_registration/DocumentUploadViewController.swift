@@ -16,8 +16,10 @@ class DocumentUploadViewController: UIViewController, Storyboarded {
     static var storyboard: String = "LoginAndRegistration"
     
     // MARK: - Outlets
+    @IBOutlet weak var idNumberTextField: UITextField!
     @IBOutlet weak var documentImageView: UIImageView!
-    
+    @IBOutlet weak var verifyButton: UIButton!
+    @IBOutlet weak var courseOrSpecializationTextField: UITextField!
     // END OUTLETS
     
     var feature: DocumentUploadFeature?
@@ -26,6 +28,12 @@ class DocumentUploadViewController: UIViewController, Storyboarded {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+    }
+    
+    private func initViews() {
+        idNumberTextField.style()
+        courseOrSpecializationTextField.style()
+        verifyButton.style()
     }
     
     private func initFeature() {

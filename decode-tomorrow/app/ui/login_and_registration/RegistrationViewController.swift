@@ -44,6 +44,9 @@ class RegistrationViewController: UIViewController, Storyboarded {
         addressTextField.style()
         schoolTextField.style()
         registerButton.style()
+        #if DEBUG
+        mockInput()
+        #endif
     }
     
     private func initFeature() {
@@ -62,10 +65,6 @@ class RegistrationViewController: UIViewController, Storyboarded {
     }
     
     @IBAction func didTapConfirmButton(_ sender: Any) {
-        
-        #if DEBUG
-        mockInput()
-        #endif
         
         let hc = "student"
         
