@@ -11,12 +11,12 @@ import UIKit
 
 class TasksListTableDataSource: NSObject, UITableViewDataSource {
 
-    var tasks: [GetTaskListViewModel.TaskViewModel] = []
+    var tasks: [TaskViewModel] = []
     
     override init() {
     }
     
-    func reloadData(_ tasks: [GetTaskListViewModel.TaskViewModel], tableView: UITableView) {
+    func reloadData(_ tasks: [TaskViewModel], tableView: UITableView) {
         self.tasks = tasks
         tableView.reloadData()
     }
@@ -28,7 +28,7 @@ class TasksListTableDataSource: NSObject, UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: TasksListTableViewCell.identifier, for: indexPath) as! TasksListTableViewCell
         let task = self.tasks[indexPath.row]
-        cell.taskNameLabel.text = task.name
+        cell.taskNameLabel.text = task.title
         return cell
     }
     

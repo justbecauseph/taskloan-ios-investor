@@ -16,13 +16,15 @@ enum Destination {
         case push
     }
     
-    case login
+    case login(CallsAnApiBehindLogin)
     case register
     
     var viewController: UIViewController {
         switch self {
-        case .login:
-            return LoginViewController.instanciate()
+        case .login(let callsAnApiBehindLogin):
+            let vc = LoginViewController.instanciate()
+            vc.callsAnApiBehindMe = callsAnApiBehindLogin
+            return vc
         case .register:
             return RegistrationViewController.instanciate()
         }

@@ -1,0 +1,24 @@
+//
+//  Task.swift
+//  decode-tomorrow
+//
+//  Created by Mark on 10/11/2018.
+//  Copyright © 2018 Just Because. All rights reserved.
+//
+
+import Foundation
+
+struct Task: Decodable {
+    let id: Int
+    let userId: Int
+    let claimedByUserId: Int
+    let amount: Double
+    let title: String
+    let description: String
+    let category: String
+    let duration: String
+    let completedAt: String
+    let createdAt: String
+    let updatedAt: String
+}
+

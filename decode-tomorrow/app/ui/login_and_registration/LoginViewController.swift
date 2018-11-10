@@ -9,6 +9,10 @@
 import Foundation
 import UIKit
 
+protocol CallsAnApiBehindLogin {
+    func callApi(_ loginFeatureDelegate: LoginFeatureDelegate)
+}
+
 class LoginViewController: UIViewController, Storyboarded {
     
     static var storyboardId: String = "LoginViewController"
@@ -20,6 +24,7 @@ class LoginViewController: UIViewController, Storyboarded {
     @IBOutlet weak var loginButton: UIButton!
     // END OUTLETS
     
+    var callsAnApiBehindMe: CallsAnApiBehindLogin?
     var feature: LoginFeature?
     
     // MARK: - Init
@@ -43,6 +48,7 @@ class LoginViewController: UIViewController, Storyboarded {
         let email = emailTextField.text ?? ""
         let password = passwordTextField.text ?? ""
         feature?.login(email: email, password: password)
+        callsAnApiBehindMe?.callApi(self)
     }
     
     @IBAction func didTapRegisterButton(_ sender: Any) {
@@ -55,10 +61,10 @@ extension LoginViewController: LoginFeatureDelegate {
     
     func loginSuccess() {
         feature?.detach()
-        self.dismiss(animated: true, completion: nil)
     }
     
     func loginFailed() {
+        showAlert(.error, message: "Whoops! Your email or password is invalid!")
     }
     
 }

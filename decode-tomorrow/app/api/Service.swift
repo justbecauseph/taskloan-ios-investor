@@ -13,7 +13,7 @@ enum Service {
     case login(LoginParams)
     case register(RegistrationParams)
     case uploadDocument(Data)
-    case getTasksList
+    case getTasksList(TasksCategories)
 }
 
 extension Service: TargetType {
@@ -76,7 +76,7 @@ extension Service: TargetType {
         case .none:
             return ["Accept": "application/json"]
         case .loggedIn:
-            return [HeaderKeys.authorization.rawValue: CredentialsManager.shared.token!,
+            return [HeaderKeys.authorization.rawValue: "Basic \(CredentialsManager.shared.token!)",
                     "Accept": "application/json"]
         }
     }

@@ -21,7 +21,7 @@ class LoginFeature: Feature<LoginFeatureDelegate>  {
     func login(email: String, password: String) {
         let params = LoginParams(email: email, password: password)
         credentialsManager.store(params)
-        delegate?.loginSuccess()
+        
     }
     
 }

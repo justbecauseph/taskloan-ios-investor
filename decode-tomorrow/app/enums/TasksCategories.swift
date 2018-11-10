@@ -1,5 +1,5 @@
 //
-//  TaskListResponse.swift
+//  TasksCategories.swift
 //  decode-tomorrow
 //
 //  Created by Mark on 10/11/2018.
@@ -8,11 +8,6 @@
 
 import Foundation
 
-struct Task: Decodable {
-}
-
-struct TaskListResponse: Decodable {
-    
-    let array: [Task]
-    
+enum TasksCategories: String {
+    case office
 }

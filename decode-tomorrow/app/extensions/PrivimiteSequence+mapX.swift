@@ -12,8 +12,14 @@ import RxSwift
 
 extension PrimitiveSequence where TraitType == SingleTrait, ElementType == Response {
     
+    private static let decoder: JSONDecoder = {
+        let decoder = JSONDecoder()
+        decoder.keyDecodingStrategy = .convertFromSnakeCase
+        return decoder
+    }()
+    
     func mapX<D: Decodable>(_ decodable: D.Type, dBag: DisposeBag, on handler: @escaping ((Event<D>) -> Void)) {
-        self.mapErrors().map(decodable).asObservable().subscribe(handler).disposed(by: dBag)
+        self.mapErrors().map(D.self, using: PrimitiveSequence.decoder).asObservable().subscribe(handler).disposed(by: dBag)
     }
 
 }

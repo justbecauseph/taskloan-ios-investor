@@ -9,37 +9,29 @@
 import Foundation
 import RxSwift
 
-struct GetTaskListViewModel {
-    
-    struct TaskViewModel {
-        var name: String
-        init(_ model: Task) {
-            self.name = "Task Name"
-        }
-    }
-    
-    var tasks: [TaskViewModel]
-    
-    init(_ model: TaskListResponse) {
-        self.tasks = model.array.map { TaskViewModel($0) }
+struct TaskViewModel {
+    let model: Task
+    let title: String
+    init(_ model: Task) {
+        self.model = model
+        self.title = model.title
     }
 }
 
 protocol TasksListFeatureDelegate {
-    func getTaskListSuccess(_ viewModel: GetTaskListViewModel)
-    func getLoanError(error: String)
+    func getTaskListSuccess(_ viewModel: [TaskViewModel])
+    func getTaskListError(error: String)
 }
 
 class TasksListFeature: Feature<TasksListFeatureDelegate> {
     
-    func fetchTasksList() {
-        provider.request(.getTasksList).mapX(TaskListResponse.self, dBag: dBag) { (event) in
+    func fetchTasksList(category: TasksCategories) {
+        provider.request(.getTasksList(category)).mapX([Task].self, dBag: dBag) { (event) in
             switch event {
             case .next(let value):
-                let vm = GetTaskListViewModel(value)
-                self.delegate?.getTaskListSuccess(vm)
+                self.delegate?.getTaskListSuccess(value.map { TaskViewModel.init($0) })
             case .error(let error):
-                self.delegate?.getLoanError(error: error.localizedDescription)
+                self.delegate?.getTaskListError(error: error.localizedDescription)
             case .completed:
                 break
             }
