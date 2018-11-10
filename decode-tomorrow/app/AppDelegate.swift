@@ -19,6 +19,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
         autoLogOut()
         initKeyboardManager()
+        initNavBar()
         initWindow()
         return true
     }
@@ -56,6 +57,11 @@ extension AppDelegate {
     
     func initKeyboardManager() {
         IQKeyboardManager.shared.enable = true
+    }
+    
+    func initNavBar() {
+        let appearance = UINavigationBar.appearance()
+        appearance.barTintColor = Colors.teal.uiColor
     }
     
     func initWindow() {
