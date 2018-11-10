@@ -66,6 +66,10 @@ class RegistrationViewController: UIViewController, Storyboarded {
     
     @IBAction func didTapConfirmButton(_ sender: Any) {
         
+        self.navigate(to: .documentUpload)
+        
+        return
+        
         let hc = "student"
         
         guard let mobileNumber = phoneNumberTextField.text?.trim() else {

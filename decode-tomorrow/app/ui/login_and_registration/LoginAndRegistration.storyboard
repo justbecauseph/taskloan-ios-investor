@@ -416,6 +416,7 @@
                                             <constraint firstItem="0BB-An-2Zo" firstAttribute="top" secondItem="Tdf-Hd-h9U" secondAttribute="bottom" constant="48" id="CQt-K6-v67"/>
                                             <constraint firstItem="Tdf-Hd-h9U" firstAttribute="top" secondItem="JaB-3E-f0D" secondAttribute="top" constant="88" id="iOm-hW-xRI"/>
                                             <constraint firstItem="0BB-An-2Zo" firstAttribute="leading" secondItem="JaB-3E-f0D" secondAttribute="leading" constant="48" id="qcc-lT-Q8a"/>
+                                            <constraint firstAttribute="bottom" secondItem="V6I-OV-87c" secondAttribute="bottom" constant="61.5" id="zQV-e3-xbK"/>
                                         </constraints>
                                     </view>
                                 </subviews>

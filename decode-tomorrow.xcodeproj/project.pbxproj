@@ -73,6 +73,7 @@
 		5CE91D472197579C00E880B2 /* UITextField+style.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CE91D462197579C00E880B2 /* UITextField+style.swift */; };
 		5CE91D4A219757AD00E880B2 /* UIButton+style.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CE91D49219757AD00E880B2 /* UIButton+style.swift */; };
 		5CE91D4C219757F400E880B2 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CE91D4B219757F400E880B2 /* Colors.swift */; };
+		5CE91D4E21976B9500E880B2 /* UIView+addDashedBorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CE91D4D21976B9500E880B2 /* UIView+addDashedBorder.swift */; };
 		806FDACB3D1CFDF97896266F /* Pods_decode_tomorrow.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2E5ACC0A7215D5A44B392E8 /* Pods_decode_tomorrow.framework */; };
 /* End PBXBuildFile section */
 
@@ -146,6 +147,7 @@
 		5CE91D462197579C00E880B2 /* UITextField+style.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+style.swift"; sourceTree = "<group>"; };
 		5CE91D49219757AD00E880B2 /* UIButton+style.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+style.swift"; sourceTree = "<group>"; };
 		5CE91D4B219757F400E880B2 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		5CE91D4D21976B9500E880B2 /* UIView+addDashedBorder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+addDashedBorder.swift"; sourceTree = "<group>"; };
 		B2E5ACC0A7215D5A44B392E8 /* Pods_decode_tomorrow.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_decode_tomorrow.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2647098DFCB5FE47D40D83C /* Pods-decode-tomorrow.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-decode-tomorrow.release.xcconfig"; path = "Pods/Target Support Files/Pods-decode-tomorrow/Pods-decode-tomorrow.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -482,6 +484,7 @@
 			children = (
 				5CE91D462197579C00E880B2 /* UITextField+style.swift */,
 				5CE91D49219757AD00E880B2 /* UIButton+style.swift */,
+				5CE91D4D21976B9500E880B2 /* UIView+addDashedBorder.swift */,
 			);
 			path = style;
 			sourceTree = "<group>";
@@ -656,6 +659,7 @@
 				5C83CCA5219738AA00991A89 /* DocumentUploadViewController.swift in Sources */,
 				5C83CCB9219748FC00991A89 /* ClaimTaskFeature.swift in Sources */,
 				5C83CCAE21973FC900991A89 /* UIView+shake.swift in Sources */,
+				5CE91D4E21976B9500E880B2 /* UIView+addDashedBorder.swift in Sources */,
 				5C41D4252196D8B90092BB18 /* RegistrationFeature.swift in Sources */,
 				5C41D3F82196ABB70092BB18 /* PrivimiteSequence+mapX.swift in Sources */,
 				5C41D4362196F0F60092BB18 /* LoanFeature.swift in Sources */,

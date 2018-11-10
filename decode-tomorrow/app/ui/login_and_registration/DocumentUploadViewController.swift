@@ -28,11 +28,13 @@ class DocumentUploadViewController: UIViewController, Storyboarded {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        initViews()
     }
     
     private func initViews() {
         idNumberTextField.style()
         courseOrSpecializationTextField.style()
+        documentImageView.addDashedBorder()
         verifyButton.style()
     }
     
