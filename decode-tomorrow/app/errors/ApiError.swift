@@ -9,9 +9,11 @@
 import Foundation
 
 struct ApiError: Decodable {
-    let messages: [String]
+//    let messages: [String]
+    let message: String
 }
 
 extension ApiError: LocalizedError {
-    var localizedDescription: String { return messages.joined() }
+//    var localizedDescription: String { return messages.joined() }
+    var localizedDescription: String { return message }
 }

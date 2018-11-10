@@ -33,7 +33,11 @@ class DashboardViewController: UIViewController, Storyboarded {
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-        if !AppStates.userIsLoggedIn.evaluate { self.navigate(to: .login) }
+        guard AppStates.userIsLoggedIn.evaluate else {
+            self.navigate(to: .login)
+            return
+        }
+        tasksListFeature?.fetchTasksList()
     }
     
     private func initFeatures() {

@@ -179,6 +179,7 @@
 		5C0441AB21967E57006251FD /* app */ = {
 			isa = PBXGroup;
 			children = (
+				5C83CC9F2197227D00991A89 /* classes */,
 				5C04419821967D5A006251FD /* AppDelegate.swift */,
 				5C0441B221968423006251FD /* api */,
 				5C41D41C2196D43F0092BB18 /* app_states */,
@@ -411,6 +412,13 @@
 				5C41D4472197010A0092BB18 /* TasksListTableViewCell.xib */,
 			);
 			path = TaskListTableViewCell;
+			sourceTree = "<group>";
+		};
+		5C83CC9F2197227D00991A89 /* classes */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = classes;
 			sourceTree = "<group>";
 		};
 		92268904371A7902E553098C /* Frameworks */ = {

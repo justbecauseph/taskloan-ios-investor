@@ -15,7 +15,7 @@ class Provider: MoyaProvider<Service> {
     static let sharedRx = Reactive(Provider())
     
     init() {
-        let plugins = [NetworkLoggerPlugin.init(verbose: true, cURL: true)]
+        let plugins = [NetworkLoggerPlugin.init(verbose: true)]
         super.init(plugins: plugins)
     }
     

@@ -19,7 +19,7 @@ enum Service {
 extension Service: TargetType {
     
     var baseURL: URL {
-        let urlString = "https://www.taskloan.pro/api/"
+        let urlString = "https://taskloan.pro/api/"
         guard let url = URL(string: urlString) else { fatalError() }
         return url
     }

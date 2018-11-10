@@ -13,7 +13,7 @@ import RxSwift
 extension PrimitiveSequence where TraitType == SingleTrait, ElementType == Response {
     
     func mapErrors() -> PrimitiveSequence {
-        return self.catchError { (e) -> PrimitiveSequence in
+        return self.filterSuccessfulStatusCodes().catchError { (e) -> PrimitiveSequence in
             
             guard let error = e as? MoyaError else { throw e }
             

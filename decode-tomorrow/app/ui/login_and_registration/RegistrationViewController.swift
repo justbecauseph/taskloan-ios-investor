@@ -40,10 +40,10 @@ class RegistrationViewController: UIViewController, Storyboarded {
     
     // MARK: - Actions
     func mockInput() {
-        self.phoneNumberTextField.text = "09258627861"
+        self.phoneNumberTextField.text = "09999999999"
         self.passwordTextField.text = "password"
         self.confirmPasswordTextField.text = "password"
-        self.emailTextField.text = "mark@gmail.com"
+        self.emailTextField.text = "mark.rufino.io@gmail.com"
         self.nameTextField.text = "Mark Alain D. Rufino"
         self.addressTextField.text = "Metrowalk"
         self.schoolTextField.text = "UA"
@@ -121,6 +121,7 @@ class RegistrationViewController: UIViewController, Storyboarded {
 extension RegistrationViewController: RegistrationFeatureDelegate {
     
     func registrationSuccess(_ viewModel: RegistrationViewModel) {
+        showAlert(.success, message: "So far so good!")
     }
     
     func registrationError(error: String) {
