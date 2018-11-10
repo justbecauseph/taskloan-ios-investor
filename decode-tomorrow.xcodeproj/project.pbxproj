@@ -129,11 +129,11 @@
 		5C0441AB21967E57006251FD /* app */ = {
 			isa = PBXGroup;
 			children = (
-				5C41D3E82196A3950092BB18 /* extension */,
 				5C04419821967D5A006251FD /* AppDelegate.swift */,
 				5C0441B221968423006251FD /* api */,
 				5C0441EA21969EBE006251FD /* base_classes */,
 				5C0441DE219692CB006251FD /* enums */,
+				5C41D3E82196A3950092BB18 /* extensions */,
 				5C0441BA21968E79006251FD /* models */,
 				5C0441E721969D33006251FD /* repositories */,
 				5C0441B121968419006251FD /* ui */,
@@ -233,13 +233,13 @@
 			path = base_classes;
 			sourceTree = "<group>";
 		};
-		5C41D3E82196A3950092BB18 /* extension */ = {
+		5C41D3E82196A3950092BB18 /* extensions */ = {
 			isa = PBXGroup;
 			children = (
 				5C41D3E92196A39F0092BB18 /* Date+.swift */,
 				5C41D3EB2196A4140092BB18 /* String+.swift */,
 			);
-			path = extension;
+			path = extensions;
 			sourceTree = "<group>";
 		};
 		92268904371A7902E553098C /* Frameworks */ = {
