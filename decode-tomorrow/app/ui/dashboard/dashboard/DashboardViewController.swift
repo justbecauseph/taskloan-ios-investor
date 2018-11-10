@@ -11,6 +11,8 @@ import UIKit
 
 class DashboardViewController: UIViewController, Storyboarded {
     
+    static var shouldReload: Bool = false
+    
     static var storyboardId: String = "DashboardViewController"
     static var storyboard: String = "Dashboard"
     
@@ -39,6 +41,11 @@ class DashboardViewController: UIViewController, Storyboarded {
         guard AppStates.userIsLoggedIn.evaluate else {
             self.navigate(to: .login(self))
             return
+        }
+        
+        if DashboardViewController.shouldReload {
+            self.tasksListFeature?.fetchTasksList(category: .office)
+            DashboardViewController.shouldReload = false
         }
     }
     
