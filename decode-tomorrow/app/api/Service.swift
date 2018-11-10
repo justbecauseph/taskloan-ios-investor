@@ -12,6 +12,7 @@ import Moya
 enum Service {
     case login(LoginParams)
     case register(RegistrationParams)
+    case getTasksList
 }
 
 extension Service: TargetType {
@@ -28,6 +29,8 @@ extension Service: TargetType {
             return "login"
         case .register:
             return "register"
+        case .getTasksList:
+            return "tasks"
         }
     }
     
@@ -36,6 +39,8 @@ extension Service: TargetType {
         case .login,
              .register:
             return .post
+        case .getTasksList:
+            return .get
         }
     }
     
@@ -43,18 +48,45 @@ extension Service: TargetType {
         return "{}".data(using: .utf8)!
     }
     
-    var task: Task {
+    var task: Moya.Task {
         switch self {
         case .login(let params):
             return .requestJSONEncodable(params)
         case .register(let params):
             return .requestJSONEncodable(params)
+        case .getTasksList:
+            return .requestPlain
         }
     }
     
+    enum AuthType {
+        case none
+        case loggedIn
+    }
+    
     var headers: [String : String]? {
-        return [HeaderKeys.authorization.rawValue: CredentialsManager.shared.token!]
+        switch self.authType {
+        case .none:
+            return nil
+        case .loggedIn:
+            return [HeaderKeys.authorization.rawValue: CredentialsManager.shared.token!]
+        }
     }
     
 }
 
+// MARK: - Custom
+
+extension Service {
+    
+    var authType: AuthType {
+        switch self {
+        case .register,
+             .login:
+            return .none
+        case .getTasksList:
+            return .loggedIn
+        }
+    }
+    
+}

@@ -27,10 +27,6 @@ class DashboardViewController: UIViewController, Storyboarded {
         if !AppStates.userIsLoggedIn.evaluate { self.navigate(to: .login) }
     }
     
-    func initValues(_ name: String) {
-        self.title = name
-    }
-    
     private func initFeatures() {
     }
     

@@ -9,20 +9,14 @@
 import Foundation
 import RxSwift
 
-protocol LoginFeatureDelegate: class {
+protocol LoginFeatureDelegate {
     func loginSuccess()
     func loginFailed()
 }
 
-class LoginFeature  {
+class LoginFeature: Feature<LoginFeatureDelegate>  {
     
     let credentialsManager = CredentialsManager.shared
-    
-    weak var delegate: LoginFeatureDelegate?
-    
-    init(_ delegate: LoginFeatureDelegate) {
-        self.delegate = delegate
-    }
     
     func login(email: String, password: String) {
         let params = LoginParams(email: email, password: password)

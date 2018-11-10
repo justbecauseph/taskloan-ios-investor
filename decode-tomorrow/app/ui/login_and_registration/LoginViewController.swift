@@ -45,11 +45,16 @@ class LoginViewController: UIViewController, Storyboarded {
         feature?.login(email: email, password: password)
     }
     
+    @IBAction func didTapRegisterButton(_ sender: Any) {
+        self.navigate(to: .register)
+    }
+    
 }
 
 extension LoginViewController: LoginFeatureDelegate {
     
     func loginSuccess() {
+        feature?.detach()
         self.dismiss(animated: true, completion: nil)
     }
     

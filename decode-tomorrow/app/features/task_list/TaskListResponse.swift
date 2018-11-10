@@ -1,5 +1,5 @@
 //
-//  RegistrationResponse.swift
+//  TaskListResponse.swift
 //  decode-tomorrow
 //
 //  Created by Mark on 10/11/2018.
@@ -8,5 +8,11 @@
 
 import Foundation
 
-struct RegistrationResponse: Decodable {
+struct Task: Decodable {
+}
+
+struct TaskListResponse: Decodable {
+    
+    let array: [Task]
+    
 }

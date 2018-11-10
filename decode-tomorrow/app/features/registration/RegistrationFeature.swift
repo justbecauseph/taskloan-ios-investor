@@ -8,26 +8,26 @@
 
 import Foundation
 
+struct RegistrationViewModel {}
+
 protocol RegistrationFeatureDelegate {
-    func registrationSuccess()
+    func registrationSuccess(_ viewModel: RegistrationViewModel)
     func registrationError(error: String)
 }
 
 class RegistrationFeature: Feature<RegistrationFeatureDelegate> {
     
-    func register(_ phoneNumber: String) {
-        let params = RegistrationParams.init(phoneNumber: phoneNumber)
+    func register(_ params: RegistrationParams) {
         provider.request(.register(params)).mapX(RegistrationResponse.self, dBag: dBag) { (event) in
             switch event {
             case .next:
-                self.delegate?.registrationSuccess()
+                self.delegate?.registrationSuccess(RegistrationViewModel())
             case .error(let error):
                 self.delegate?.registrationError(error: error.localizedDescription)
             case .completed:
                 break
             }
         }
-        delegate?.registrationSuccess()
     }
     
 }

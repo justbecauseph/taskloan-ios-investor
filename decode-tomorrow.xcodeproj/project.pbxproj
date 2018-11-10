@@ -8,10 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		5C04419921967D5A006251FD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C04419821967D5A006251FD /* AppDelegate.swift */; };
-		5C04419E21967D5A006251FD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5C04419C21967D5A006251FD /* Main.storyboard */; };
 		5C0441A021967D5C006251FD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5C04419F21967D5C006251FD /* Assets.xcassets */; };
 		5C0441A321967D5C006251FD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5C0441A121967D5C006251FD /* LaunchScreen.storyboard */; };
-		5C0441B021967ED0006251FD /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C0441AF21967ED0006251FD /* MainViewController.swift */; };
 		5C0441B4219684C8006251FD /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C0441B3219684C8006251FD /* Service.swift */; };
 		5C0441B6219684D0006251FD /* Provider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C0441B5219684D0006251FD /* Provider.swift */; };
 		5C0441CF219690D6006251FD /* IBMPlexSans-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5C0441C0219690D5006251FD /* IBMPlexSans-MediumItalic.ttf */; };
@@ -54,6 +52,12 @@
 		5C41D4272196D8D60092BB18 /* RegistrationParams.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C41D4262196D8D60092BB18 /* RegistrationParams.swift */; };
 		5C41D4292196D9780092BB18 /* Feature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C41D4282196D9780092BB18 /* Feature.swift */; };
 		5C41D42B2196DD230092BB18 /* RegistrationResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C41D42A2196DD230092BB18 /* RegistrationResponse.swift */; };
+		5C41D42E2196F02F0092BB18 /* TaskDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C41D42D2196F02F0092BB18 /* TaskDetailViewController.swift */; };
+		5C41D4312196F0C40092BB18 /* LoanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C41D4302196F0C40092BB18 /* LoanViewController.swift */; };
+		5C41D4332196F0DB0092BB18 /* Loan.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5C41D4322196F0DB0092BB18 /* Loan.storyboard */; };
+		5C41D4362196F0F60092BB18 /* LoanFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C41D4352196F0F60092BB18 /* LoanFeature.swift */; };
+		5C41D4382196F2520092BB18 /* TasksListFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C41D4372196F2520092BB18 /* TasksListFeature.swift */; };
+		5C41D43B2196F3D60092BB18 /* TaskListResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C41D43A2196F3D60092BB18 /* TaskListResponse.swift */; };
 		806FDACB3D1CFDF97896266F /* Pods_decode_tomorrow.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2E5ACC0A7215D5A44B392E8 /* Pods_decode_tomorrow.framework */; };
 /* End PBXBuildFile section */
 
@@ -61,11 +65,9 @@
 		44C9DF6D70D6C84A54308A0C /* Pods-decode-tomorrow.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-decode-tomorrow.debug.xcconfig"; path = "Pods/Target Support Files/Pods-decode-tomorrow/Pods-decode-tomorrow.debug.xcconfig"; sourceTree = "<group>"; };
 		5C04419521967D5A006251FD /* decode-tomorrow.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "decode-tomorrow.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5C04419821967D5A006251FD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		5C04419D21967D5A006251FD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5C04419F21967D5C006251FD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5C0441A221967D5C006251FD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5C0441A421967D5C006251FD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		5C0441AF21967ED0006251FD /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		5C0441B3219684C8006251FD /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
 		5C0441B5219684D0006251FD /* Provider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Provider.swift; sourceTree = "<group>"; };
 		5C0441C0219690D5006251FD /* IBMPlexSans-MediumItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "IBMPlexSans-MediumItalic.ttf"; sourceTree = "<group>"; };
@@ -108,6 +110,12 @@
 		5C41D4262196D8D60092BB18 /* RegistrationParams.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationParams.swift; sourceTree = "<group>"; };
 		5C41D4282196D9780092BB18 /* Feature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Feature.swift; sourceTree = "<group>"; };
 		5C41D42A2196DD230092BB18 /* RegistrationResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationResponse.swift; sourceTree = "<group>"; };
+		5C41D42D2196F02F0092BB18 /* TaskDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskDetailViewController.swift; sourceTree = "<group>"; };
+		5C41D4302196F0C40092BB18 /* LoanViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoanViewController.swift; sourceTree = "<group>"; };
+		5C41D4322196F0DB0092BB18 /* Loan.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Loan.storyboard; sourceTree = "<group>"; };
+		5C41D4352196F0F60092BB18 /* LoanFeature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoanFeature.swift; sourceTree = "<group>"; };
+		5C41D4372196F2520092BB18 /* TasksListFeature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TasksListFeature.swift; sourceTree = "<group>"; };
+		5C41D43A2196F3D60092BB18 /* TaskListResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskListResponse.swift; sourceTree = "<group>"; };
 		B2E5ACC0A7215D5A44B392E8 /* Pods_decode_tomorrow.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_decode_tomorrow.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2647098DFCB5FE47D40D83C /* Pods-decode-tomorrow.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-decode-tomorrow.release.xcconfig"; path = "Pods/Target Support Files/Pods-decode-tomorrow/Pods-decode-tomorrow.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -188,21 +196,13 @@
 			path = resources;
 			sourceTree = "<group>";
 		};
-		5C0441AE21967E7F006251FD /* main */ = {
-			isa = PBXGroup;
-			children = (
-				5C04419C21967D5A006251FD /* Main.storyboard */,
-				5C0441AF21967ED0006251FD /* MainViewController.swift */,
-			);
-			path = main;
-			sourceTree = "<group>";
-		};
 		5C0441B121968419006251FD /* ui */ = {
 			isa = PBXGroup;
 			children = (
+				5C41D42F2196F0BB0092BB18 /* loan */,
 				5C41D4122196C8180092BB18 /* dashboard */,
 				5C41D3FE2196B8560092BB18 /* login_and_registration */,
-				5C0441AE21967E7F006251FD /* main */,
+				5C41D42C2196EFE80092BB18 /* task_detail */,
 			);
 			path = ui;
 			sourceTree = "<group>";
@@ -262,8 +262,10 @@
 			isa = PBXGroup;
 			children = (
 				5C41D4282196D9780092BB18 /* Feature.swift */,
-				5C41D4232196D8A20092BB18 /* registration */,
+				5C41D4342196F0E90092BB18 /* loan */,
 				5C41D3F02196A8010092BB18 /* login */,
+				5C41D4232196D8A20092BB18 /* registration */,
+				5C41D4392196F2570092BB18 /* task_list */,
 			);
 			path = features;
 			sourceTree = "<group>";
@@ -347,6 +349,40 @@
 				5C41D42A2196DD230092BB18 /* RegistrationResponse.swift */,
 			);
 			path = registration;
+			sourceTree = "<group>";
+		};
+		5C41D42C2196EFE80092BB18 /* task_detail */ = {
+			isa = PBXGroup;
+			children = (
+				5C41D42D2196F02F0092BB18 /* TaskDetailViewController.swift */,
+			);
+			path = task_detail;
+			sourceTree = "<group>";
+		};
+		5C41D42F2196F0BB0092BB18 /* loan */ = {
+			isa = PBXGroup;
+			children = (
+				5C41D4322196F0DB0092BB18 /* Loan.storyboard */,
+				5C41D4302196F0C40092BB18 /* LoanViewController.swift */,
+			);
+			path = loan;
+			sourceTree = "<group>";
+		};
+		5C41D4342196F0E90092BB18 /* loan */ = {
+			isa = PBXGroup;
+			children = (
+				5C41D4352196F0F60092BB18 /* LoanFeature.swift */,
+			);
+			path = loan;
+			sourceTree = "<group>";
+		};
+		5C41D4392196F2570092BB18 /* task_list */ = {
+			isa = PBXGroup;
+			children = (
+				5C41D4372196F2520092BB18 /* TasksListFeature.swift */,
+				5C41D43A2196F3D60092BB18 /* TaskListResponse.swift */,
+			);
+			path = task_list;
 			sourceTree = "<group>";
 		};
 		92268904371A7902E553098C /* Frameworks */ = {
@@ -434,6 +470,7 @@
 				5C0441D0219690D6006251FD /* IBMPlexSans-Bold.ttf in Resources */,
 				5C0441DD219690D6006251FD /* IBMPlexSans-Medium.ttf in Resources */,
 				5C0441D5219690D6006251FD /* IBMPlexSans-ExtraLightItalic.ttf in Resources */,
+				5C41D4332196F0DB0092BB18 /* Loan.storyboard in Resources */,
 				5C0441D2219690D6006251FD /* IBMPlexSans-ThinItalic.ttf in Resources */,
 				5C0441D4219690D6006251FD /* IBMPlexSans-LightItalic.ttf in Resources */,
 				5C0441A021967D5C006251FD /* Assets.xcassets in Resources */,
@@ -445,7 +482,6 @@
 				5C0441DB219690D6006251FD /* IBMPlexSans-Light.ttf in Resources */,
 				5C0441DA219690D6006251FD /* IBMPlexSans-BoldItalic.ttf in Resources */,
 				5C0441CF219690D6006251FD /* IBMPlexSans-MediumItalic.ttf in Resources */,
-				5C04419E21967D5A006251FD /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -511,9 +547,12 @@
 				5C41D42B2196DD230092BB18 /* RegistrationResponse.swift in Sources */,
 				5C41D4252196D8B90092BB18 /* RegistrationFeature.swift in Sources */,
 				5C41D3F82196ABB70092BB18 /* PrivimiteSequence+mapX.swift in Sources */,
+				5C41D4362196F0F60092BB18 /* LoanFeature.swift in Sources */,
+				5C41D43B2196F3D60092BB18 /* TaskListResponse.swift in Sources */,
 				5C41D4222196D7250092BB18 /* RegistrationViewController.swift in Sources */,
 				5C41D4002196B8650092BB18 /* LoginViewController.swift in Sources */,
 				5C41D3F42196A81E0092BB18 /* LoginResponse.swift in Sources */,
+				5C41D42E2196F02F0092BB18 /* TaskDetailViewController.swift in Sources */,
 				5C41D40A2196BE870092BB18 /* CredentialsManager.swift in Sources */,
 				5C41D40C2196C1F80092BB18 /* HeaderKeys.swift in Sources */,
 				5C41D4162196C8310092BB18 /* DashboardViewController.swift in Sources */,
@@ -522,13 +561,14 @@
 				5C41D3F62196A8B30092BB18 /* LoginParams.swift in Sources */,
 				5C0441E0219692D9006251FD /* Fonts.swift in Sources */,
 				5C0441E221969326006251FD /* DateTimeFormats.swift in Sources */,
+				5C41D4382196F2520092BB18 /* TasksListFeature.swift in Sources */,
 				5C41D3FD2196B16A0092BB18 /* ApiError.swift in Sources */,
 				5C0441B6219684D0006251FD /* Provider.swift in Sources */,
-				5C0441B021967ED0006251FD /* MainViewController.swift in Sources */,
 				5C04419921967D5A006251FD /* AppDelegate.swift in Sources */,
 				5C0441B4219684C8006251FD /* Service.swift in Sources */,
 				5C41D3FA2196AE3A0092BB18 /* PrimitiveSequence+mapErrors.swift in Sources */,
 				5C41D3EC2196A4140092BB18 /* String+.swift in Sources */,
+				5C41D4312196F0C40092BB18 /* LoanViewController.swift in Sources */,
 				5C41D4052196B9A40092BB18 /* Storyboarded.swift in Sources */,
 				5C41D4292196D9780092BB18 /* Feature.swift in Sources */,
 				5C41D4192196C8E90092BB18 /* Destination.swift in Sources */,
@@ -538,14 +578,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		5C04419C21967D5A006251FD /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				5C04419D21967D5A006251FD /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		5C0441A121967D5C006251FD /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (

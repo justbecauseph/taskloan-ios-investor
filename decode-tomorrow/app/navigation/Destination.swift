@@ -17,24 +17,29 @@ enum Destination {
     }
     
     case login
+    case register
     
     var viewController: UIViewController {
         switch self {
         case .login:
             return LoginViewController.instanciate()
+        case .register:
+            return RegistrationViewController.instanciate()
         }
     }
     
     var completion: (() -> Void)? {
         switch self {
-        case .login:
+        case .login,
+             .register:
             return nil
         }
     }
     
     var navType: NavigationType {
         switch self {
-        case .login:
+        case .login,
+             .register:
             return .present
         }
     }
@@ -43,6 +48,8 @@ enum Destination {
         switch self {
         case .login:
             return false
+        case .register:
+            return true
         }
     }
     
