@@ -14,7 +14,7 @@ struct TaskViewModel {
     let title: String
     init(_ model: Task) {
         self.model = model
-        self.title = model.title
+        self.title = model.title ?? "n/a"
     }
 }
 

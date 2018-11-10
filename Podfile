@@ -9,5 +9,6 @@ target 'decode-tomorrow' do
   pod 'Moya/RxSwift', '~> 11.0'
   pod 'PopupDialog', '~> 0.9'
   pod 'IQKeyboardManagerSwift'
+  pod 'FontAwesome.swift'
 
 end

@@ -202,5 +202,53 @@
             </objects>
             <point key="canvasLocation" x="846" y="27"/>
         </scene>
+        <!--Document Upload View Controller-->
+        <scene sceneID="O9e-fh-kax">
+            <objects>
+                <viewController storyboardIdentifier="DocumentUploadViewController" id="c7x-O7-4jx" customClass="DocumentUploadViewController" customModule="decode_tomorrow" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="AUJ-fb-c6d">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="53" translatesAutoresizingMaskIntoConstraints="NO" id="0BB-An-2Zo">
+                                <rect key="frame" x="24" y="123.5" width="327" height="420"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="xsR-Oa-sMG">
+                                        <rect key="frame" x="0.0" y="0.0" width="327" height="327"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="327" id="QVA-8Y-e8z"/>
+                                        </constraints>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V6I-OV-87c">
+                                        <rect key="frame" x="0.0" y="380" width="327" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="92x-Ud-9G6"/>
+                                        </constraints>
+                                        <state key="normal" title="Verify"/>
+                                        <connections>
+                                            <action selector="didTapConfirmButton:" destination="DBo-qD-MEp" eventType="touchUpInside" id="oQZ-a6-5A2"/>
+                                            <action selector="didTapVerifyButton:" destination="c7x-O7-4jx" eventType="touchUpInside" id="JrN-Xx-GsK"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="0BB-An-2Zo" firstAttribute="leading" secondItem="Tza-8a-4e8" secondAttribute="leading" constant="24" id="4X0-j6-xqF"/>
+                            <constraint firstItem="Tza-8a-4e8" firstAttribute="trailing" secondItem="0BB-An-2Zo" secondAttribute="trailing" constant="24" id="992-VR-lco"/>
+                            <constraint firstItem="0BB-An-2Zo" firstAttribute="centerX" secondItem="AUJ-fb-c6d" secondAttribute="centerX" id="D6n-0Q-rX5"/>
+                            <constraint firstItem="0BB-An-2Zo" firstAttribute="centerY" secondItem="AUJ-fb-c6d" secondAttribute="centerY" id="kUw-Qx-yqc"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Tza-8a-4e8"/>
+                    </view>
+                    <connections>
+                        <outlet property="documentImageView" destination="xsR-Oa-sMG" id="QKI-eS-lKG"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LNW-0t-ebr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1647" y="27"/>
+        </scene>
     </scenes>
 </document>

@@ -33,6 +33,9 @@ class LoginViewController: UIViewController, Storyboarded {
         super.viewDidLoad()
         initFeatures()
         initViews()
+        #if DEBUG
+        mockUI()
+        #endif
     }
     
     private func initFeatures() {
@@ -43,6 +46,11 @@ class LoginViewController: UIViewController, Storyboarded {
     }
     
     // MARK: - Actions
+    
+    func mockUI() {
+        emailTextField.text = "student@taskloan.pro"
+        passwordTextField.text = "secret"
+    }
     
     @IBAction func didTapLoginButton(_ sender: Any) {
         let email = emailTextField.text ?? ""
@@ -61,10 +69,12 @@ extension LoginViewController: LoginFeatureDelegate {
     
     func loginSuccess() {
         feature?.detach()
+        self.dismiss(animated: true, completion: nil)
     }
     
-    func loginFailed() {
-        showAlert(.error, message: "Whoops! Your email or password is invalid!")
+    func loginFailed(error: String) {
+        loginButton.shake()
+        showAlert(.error, message: error)
     }
     
 }

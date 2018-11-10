@@ -9,16 +9,15 @@
 import Foundation
 
 struct Task: Decodable {
-    let id: Int
-    let userId: Int
-    let claimedByUserId: Int
-    let amount: Double
-    let title: String
-    let description: String
-    let category: String
-    let duration: String
-    let completedAt: String
-    let createdAt: String
-    let updatedAt: String
+    let id: Int?
+    let userId: Int?
+    let claimedByUserId: Int?
+    let amount: String?
+    let title: String?
+    let description: String?
+    let category: String?
+    let duration: String?
+    let completedAt: String?
+    let createdAt: String?
+    let updatedAt: String?
 }
-

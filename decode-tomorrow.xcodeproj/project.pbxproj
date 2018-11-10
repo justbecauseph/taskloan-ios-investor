@@ -63,6 +63,10 @@
 		5C41D4492197010A0092BB18 /* TasksListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5C41D4472197010A0092BB18 /* TasksListTableViewCell.xib */; };
 		5C83CCA121972B5B00991A89 /* TasksCategories.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C83CCA021972B5B00991A89 /* TasksCategories.swift */; };
 		5C83CCA3219730AB00991A89 /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C83CCA2219730AB00991A89 /* Task.swift */; };
+		5C83CCA5219738AA00991A89 /* DocumentUploadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C83CCA4219738AA00991A89 /* DocumentUploadViewController.swift */; };
+		5C83CCA8219738FD00991A89 /* DocumentUploadFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C83CCA7219738FD00991A89 /* DocumentUploadFeature.swift */; };
+		5C83CCAC219739F900991A89 /* EmptyResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C83CCAB219739F900991A89 /* EmptyResponse.swift */; };
+		5C83CCAE21973FC900991A89 /* UIView+shake.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C83CCAD21973FC900991A89 /* UIView+shake.swift */; };
 		806FDACB3D1CFDF97896266F /* Pods_decode_tomorrow.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2E5ACC0A7215D5A44B392E8 /* Pods_decode_tomorrow.framework */; };
 /* End PBXBuildFile section */
 
@@ -126,6 +130,10 @@
 		5C41D4472197010A0092BB18 /* TasksListTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TasksListTableViewCell.xib; sourceTree = "<group>"; };
 		5C83CCA021972B5B00991A89 /* TasksCategories.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TasksCategories.swift; sourceTree = "<group>"; };
 		5C83CCA2219730AB00991A89 /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
+		5C83CCA4219738AA00991A89 /* DocumentUploadViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentUploadViewController.swift; sourceTree = "<group>"; };
+		5C83CCA7219738FD00991A89 /* DocumentUploadFeature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentUploadFeature.swift; sourceTree = "<group>"; };
+		5C83CCAB219739F900991A89 /* EmptyResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyResponse.swift; sourceTree = "<group>"; };
+		5C83CCAD21973FC900991A89 /* UIView+shake.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+shake.swift"; sourceTree = "<group>"; };
 		B2E5ACC0A7215D5A44B392E8 /* Pods_decode_tomorrow.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_decode_tomorrow.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2647098DFCB5FE47D40D83C /* Pods-decode-tomorrow.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-decode-tomorrow.release.xcconfig"; path = "Pods/Target Support Files/Pods-decode-tomorrow/Pods-decode-tomorrow.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -267,6 +275,7 @@
 				5C41D3EB2196A4140092BB18 /* String+.swift */,
 				5C41D3F72196ABB70092BB18 /* PrivimiteSequence+mapX.swift */,
 				5C41D43C2196F7980092BB18 /* UIViewController+.swift */,
+				5C83CCAD21973FC900991A89 /* UIView+shake.swift */,
 			);
 			path = extensions;
 			sourceTree = "<group>";
@@ -275,6 +284,8 @@
 			isa = PBXGroup;
 			children = (
 				5C41D4282196D9780092BB18 /* Feature.swift */,
+				5C83CCAB219739F900991A89 /* EmptyResponse.swift */,
+				5C83CCA6219738F100991A89 /* document_upload */,
 				5C41D4342196F0E90092BB18 /* loan */,
 				5C41D3F02196A8010092BB18 /* login */,
 				5C41D4232196D8A20092BB18 /* registration */,
@@ -308,6 +319,7 @@
 				5C41D4012196B97C0092BB18 /* LoginAndRegistration.storyboard */,
 				5C41D3FF2196B8650092BB18 /* LoginViewController.swift */,
 				5C41D4212196D7250092BB18 /* RegistrationViewController.swift */,
+				5C83CCA4219738AA00991A89 /* DocumentUploadViewController.swift */,
 			);
 			path = login_and_registration;
 			sourceTree = "<group>";
@@ -424,6 +436,14 @@
 			path = classes;
 			sourceTree = "<group>";
 		};
+		5C83CCA6219738F100991A89 /* document_upload */ = {
+			isa = PBXGroup;
+			children = (
+				5C83CCA7219738FD00991A89 /* DocumentUploadFeature.swift */,
+			);
+			path = document_upload;
+			sourceTree = "<group>";
+		};
 		92268904371A7902E553098C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -537,6 +557,7 @@
 				"${SRCROOT}/Pods/Target Support Files/Pods-decode-tomorrow/Pods-decode-tomorrow-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/DynamicBlurView/DynamicBlurView.framework",
+				"${BUILT_PRODUCTS_DIR}/FontAwesome.swift/FontAwesome_swift.framework",
 				"${BUILT_PRODUCTS_DIR}/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/Moya/Moya.framework",
 				"${BUILT_PRODUCTS_DIR}/PopupDialog/PopupDialog.framework",
@@ -547,6 +568,7 @@
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DynamicBlurView.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FontAwesome_swift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManagerSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Moya.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PopupDialog.framework",
@@ -583,10 +605,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5C83CCAC219739F900991A89 /* EmptyResponse.swift in Sources */,
 				5C41D3EA2196A39F0092BB18 /* Date+.swift in Sources */,
 				5C41D41E2196D4580092BB18 /* AppStates.swift in Sources */,
 				5C41D3EF2196A6BD0092BB18 /* LoginFeature.swift in Sources */,
 				5C41D42B2196DD230092BB18 /* RegistrationResponse.swift in Sources */,
+				5C83CCA5219738AA00991A89 /* DocumentUploadViewController.swift in Sources */,
+				5C83CCAE21973FC900991A89 /* UIView+shake.swift in Sources */,
 				5C41D4252196D8B90092BB18 /* RegistrationFeature.swift in Sources */,
 				5C41D3F82196ABB70092BB18 /* PrivimiteSequence+mapX.swift in Sources */,
 				5C41D4362196F0F60092BB18 /* LoanFeature.swift in Sources */,
@@ -601,6 +626,7 @@
 				5C83CCA3219730AB00991A89 /* Task.swift in Sources */,
 				5C41D4452196FEE30092BB18 /* TasksListTableDataSource.swift in Sources */,
 				5C41D4272196D8D60092BB18 /* RegistrationParams.swift in Sources */,
+				5C83CCA8219738FD00991A89 /* DocumentUploadFeature.swift in Sources */,
 				5C41D41B2196C9040092BB18 /* UIViewController+navigate.swift in Sources */,
 				5C41D3F62196A8B30092BB18 /* LoginParams.swift in Sources */,
 				5C0441E0219692D9006251FD /* Fonts.swift in Sources */,

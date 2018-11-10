@@ -98,7 +98,7 @@ extension DashboardViewController: TasksListFeatureDelegate {
     func getTaskListError(error: String) {
         refreshControl.endRefreshing()
         
-        self.loginFeatureDelegate?.loginFailed()
+        self.loginFeatureDelegate?.loginFailed(error: error)
         self.loginFeatureDelegate = nil
 
     }

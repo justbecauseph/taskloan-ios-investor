@@ -11,7 +11,7 @@ import RxSwift
 
 protocol LoginFeatureDelegate {
     func loginSuccess()
-    func loginFailed()
+    func loginFailed(error: String)
 }
 
 class LoginFeature: Feature<LoginFeatureDelegate>  {
