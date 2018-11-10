@@ -13,7 +13,7 @@ import UIKit
 class DocumentUploadViewController: UIViewController, Storyboarded {
     
     static var storyboardId: String = "DocumentUploadViewController"
-    static var storyboard: String = "LoginAndRegistrationStoryboard"
+    static var storyboard: String = "LoginAndRegistration"
     
     // MARK: - Outlets
     @IBOutlet weak var documentImageView: UIImageView!
