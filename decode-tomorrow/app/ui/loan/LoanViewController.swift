@@ -24,6 +24,7 @@ class LoanViewController: UIViewController, Storyboarded {
     
     // END OUTLETS
     
+    private var reason: ReasonsForLoaning?
     var feature: LoanFeature?
     
     // MARK: - Init
@@ -55,16 +56,19 @@ class LoanViewController: UIViewController, Storyboarded {
     private var picker: UIPickerView!
     
     @IBAction func dropDownButtonAction() {
-        let picker = UIPickerView()
+        picker?.removeFromSuperview()
+        let rect = CGRect(x: 0, y: UIScreen.main.bounds.height - 200.0, width: UIScreen.main.bounds.width, height: 200.0)
+        picker = UIPickerView.init(frame: rect)
+        picker.backgroundColor = UIColor.gray
         self.view.addSubview(picker)
-        picker.translatesAutoresizingMaskIntoConstraints = false
-        picker.heightAnchor.constraint(equalToConstant: 40).isActive = true
-        picker.leadingAnchor.constraint(equalTo: view.leadingAnchor).isActive = true
-        picker.trailingAnchor.constraint(equalTo: view.trailingAnchor).isActive = true
-        picker.bottomAnchor.constraint(equalTo: view.bottomAnchor).isActive = true
         picker.delegate = self
         picker.dataSource = self
         
+        self.picker.transform = CGAffineTransform(translationX: 0, y: self.picker.frame.maxY + 200.0)
+        
+        UIView.animate(withDuration: 0.5, animations: {
+            self.picker.transform = .identity
+        }, completion: nil)
         
     }
     
@@ -75,8 +79,14 @@ class LoanViewController: UIViewController, Storyboarded {
 
 extension LoanViewController: UIPickerViewDelegate, UIPickerViewDataSource {
     
+    func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
+        self.picker.removeFromSuperview()
+        self.reason = ReasonsForLoaning.allCases[row]
+        self.reasonTextField.text = self.reason?.pickerText
+    }
+    
     func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
-        return ReasonsForLoaning.allCases[component].pickerText
+        return ReasonsForLoaning.allCases[row].pickerText
     }
     
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
