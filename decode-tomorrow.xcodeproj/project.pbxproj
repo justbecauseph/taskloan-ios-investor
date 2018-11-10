@@ -58,6 +58,7 @@
 		5C41D4362196F0F60092BB18 /* LoanFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C41D4352196F0F60092BB18 /* LoanFeature.swift */; };
 		5C41D4382196F2520092BB18 /* TasksListFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C41D4372196F2520092BB18 /* TasksListFeature.swift */; };
 		5C41D43B2196F3D60092BB18 /* TaskListResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C41D43A2196F3D60092BB18 /* TaskListResponse.swift */; };
+		5C41D43D2196F7980092BB18 /* UIViewController+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C41D43C2196F7980092BB18 /* UIViewController+.swift */; };
 		806FDACB3D1CFDF97896266F /* Pods_decode_tomorrow.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2E5ACC0A7215D5A44B392E8 /* Pods_decode_tomorrow.framework */; };
 /* End PBXBuildFile section */
 
@@ -116,6 +117,7 @@
 		5C41D4352196F0F60092BB18 /* LoanFeature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoanFeature.swift; sourceTree = "<group>"; };
 		5C41D4372196F2520092BB18 /* TasksListFeature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TasksListFeature.swift; sourceTree = "<group>"; };
 		5C41D43A2196F3D60092BB18 /* TaskListResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskListResponse.swift; sourceTree = "<group>"; };
+		5C41D43C2196F7980092BB18 /* UIViewController+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+.swift"; sourceTree = "<group>"; };
 		B2E5ACC0A7215D5A44B392E8 /* Pods_decode_tomorrow.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_decode_tomorrow.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2647098DFCB5FE47D40D83C /* Pods-decode-tomorrow.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-decode-tomorrow.release.xcconfig"; path = "Pods/Target Support Files/Pods-decode-tomorrow/Pods-decode-tomorrow.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -254,6 +256,7 @@
 				5C41D3E92196A39F0092BB18 /* Date+.swift */,
 				5C41D3EB2196A4140092BB18 /* String+.swift */,
 				5C41D3F72196ABB70092BB18 /* PrivimiteSequence+mapX.swift */,
+				5C41D43C2196F7980092BB18 /* UIViewController+.swift */,
 			);
 			path = extensions;
 			sourceTree = "<group>";
@@ -567,6 +570,7 @@
 				5C04419921967D5A006251FD /* AppDelegate.swift in Sources */,
 				5C0441B4219684C8006251FD /* Service.swift in Sources */,
 				5C41D3FA2196AE3A0092BB18 /* PrimitiveSequence+mapErrors.swift in Sources */,
+				5C41D43D2196F7980092BB18 /* UIViewController+.swift in Sources */,
 				5C41D3EC2196A4140092BB18 /* String+.swift in Sources */,
 				5C41D4312196F0C40092BB18 /* LoanViewController.swift in Sources */,
 				5C41D4052196B9A40092BB18 /* Storyboarded.swift in Sources */,

@@ -10,16 +10,25 @@ import Foundation
 import RxSwift
 
 struct GetTaskListViewModel {
+    
+    struct TaskViewModel {
+        init(_ model: Task) {
+        }
+    }
+    
+    var tasks: [TaskViewModel]
+    
     init(_ model: TaskListResponse) {
+        self.tasks = model.array.map { TaskViewModel($0) }
     }
 }
 
-protocol TasksListDelegate {
+protocol TasksListFeatureDelegate {
     func getTaskListSuccess(_ viewModel: GetTaskListViewModel)
     func getLoanError(error: String)
 }
 
-class TasksListFeature: Feature<TasksListDelegate> {
+class TasksListFeature: Feature<TasksListFeatureDelegate> {
     
     func fetchTasksList() {
         provider.request(.getTasksList).mapX(TaskListResponse.self, dBag: dBag) { (event) in

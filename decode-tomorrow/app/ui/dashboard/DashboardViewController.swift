@@ -14,7 +14,14 @@ class DashboardViewController: UIViewController, Storyboarded {
     static var storyboardId: String = "DashboardViewController"
     static var storyboard: String = "Dashboard"
     
+    // MARK: - Outlers
+    // END OUTLETS
+    
+    private var tasks: [GetTaskListViewModel.TaskViewModel] = []
+    
     // MARK: - Init
+    
+    var tasksListFeature: TasksListFeature?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,9 +35,21 @@ class DashboardViewController: UIViewController, Storyboarded {
     }
     
     private func initFeatures() {
+        self.tasksListFeature = TasksListFeature(self)
     }
     
     private func initViews() {
+    }
+    
+}
+
+extension DashboardViewController: TasksListFeatureDelegate {
+    
+    func getTaskListSuccess(_ viewModel: GetTaskListViewModel) {
+        self.tasks = viewModel.tasks
+    }
+    
+    func getLoanError(error: String) {
     }
     
 }
