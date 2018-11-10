@@ -9,5 +9,11 @@
 import Foundation
 
 struct RegistrationParams: Encodable {
-    var phoneNumber: String
+    var role: String
+    var mobileNumber: String
+    var password: String
+    var email: String
+    var name: String
+    var address: String
+    var school: String
 }

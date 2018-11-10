@@ -59,6 +59,9 @@
 		5C41D4382196F2520092BB18 /* TasksListFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C41D4372196F2520092BB18 /* TasksListFeature.swift */; };
 		5C41D43B2196F3D60092BB18 /* TaskListResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C41D43A2196F3D60092BB18 /* TaskListResponse.swift */; };
 		5C41D43D2196F7980092BB18 /* UIViewController+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C41D43C2196F7980092BB18 /* UIViewController+.swift */; };
+		5C41D4452196FEE30092BB18 /* TasksListTableDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C41D4442196FEE30092BB18 /* TasksListTableDataSource.swift */; };
+		5C41D4482197010A0092BB18 /* TasksListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C41D4462197010A0092BB18 /* TasksListTableViewCell.swift */; };
+		5C41D4492197010A0092BB18 /* TasksListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5C41D4472197010A0092BB18 /* TasksListTableViewCell.xib */; };
 		806FDACB3D1CFDF97896266F /* Pods_decode_tomorrow.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2E5ACC0A7215D5A44B392E8 /* Pods_decode_tomorrow.framework */; };
 /* End PBXBuildFile section */
 
@@ -118,6 +121,9 @@
 		5C41D4372196F2520092BB18 /* TasksListFeature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TasksListFeature.swift; sourceTree = "<group>"; };
 		5C41D43A2196F3D60092BB18 /* TaskListResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskListResponse.swift; sourceTree = "<group>"; };
 		5C41D43C2196F7980092BB18 /* UIViewController+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+.swift"; sourceTree = "<group>"; };
+		5C41D4442196FEE30092BB18 /* TasksListTableDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TasksListTableDataSource.swift; sourceTree = "<group>"; };
+		5C41D4462197010A0092BB18 /* TasksListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TasksListTableViewCell.swift; sourceTree = "<group>"; };
+		5C41D4472197010A0092BB18 /* TasksListTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TasksListTableViewCell.xib; sourceTree = "<group>"; };
 		B2E5ACC0A7215D5A44B392E8 /* Pods_decode_tomorrow.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_decode_tomorrow.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2647098DFCB5FE47D40D83C /* Pods-decode-tomorrow.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-decode-tomorrow.release.xcconfig"; path = "Pods/Target Support Files/Pods-decode-tomorrow/Pods-decode-tomorrow.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -323,6 +329,8 @@
 			children = (
 				5C41D4132196C8230092BB18 /* Dashboard.storyboard */,
 				5C41D4152196C8310092BB18 /* DashboardViewController.swift */,
+				5C41D43E2196FAF80092BB18 /* TaskListTableDataSource */,
+				5C41D4412196FC480092BB18 /* TaskListTableViewCell */,
 			);
 			path = dashboard;
 			sourceTree = "<group>";
@@ -386,6 +394,23 @@
 				5C41D43A2196F3D60092BB18 /* TaskListResponse.swift */,
 			);
 			path = task_list;
+			sourceTree = "<group>";
+		};
+		5C41D43E2196FAF80092BB18 /* TaskListTableDataSource */ = {
+			isa = PBXGroup;
+			children = (
+				5C41D4442196FEE30092BB18 /* TasksListTableDataSource.swift */,
+			);
+			path = TaskListTableDataSource;
+			sourceTree = "<group>";
+		};
+		5C41D4412196FC480092BB18 /* TaskListTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				5C41D4462197010A0092BB18 /* TasksListTableViewCell.swift */,
+				5C41D4472197010A0092BB18 /* TasksListTableViewCell.xib */,
+			);
+			path = TaskListTableViewCell;
 			sourceTree = "<group>";
 		};
 		92268904371A7902E553098C /* Frameworks */ = {
@@ -466,6 +491,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5C0441D1219690D6006251FD /* OFL.txt in Resources */,
+				5C41D4492197010A0092BB18 /* TasksListTableViewCell.xib in Resources */,
 				5C0441D6219690D6006251FD /* IBMPlexSans-Italic.ttf in Resources */,
 				5C0441D9219690D6006251FD /* IBMPlexSans-SemiBold.ttf in Resources */,
 				5C0441A321967D5C006251FD /* LaunchScreen.storyboard in Resources */,
@@ -500,6 +526,7 @@
 				"${SRCROOT}/Pods/Target Support Files/Pods-decode-tomorrow/Pods-decode-tomorrow-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/DynamicBlurView/DynamicBlurView.framework",
+				"${BUILT_PRODUCTS_DIR}/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/Moya/Moya.framework",
 				"${BUILT_PRODUCTS_DIR}/PopupDialog/PopupDialog.framework",
 				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
@@ -509,6 +536,7 @@
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DynamicBlurView.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManagerSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Moya.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PopupDialog.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
@@ -559,6 +587,8 @@
 				5C41D40A2196BE870092BB18 /* CredentialsManager.swift in Sources */,
 				5C41D40C2196C1F80092BB18 /* HeaderKeys.swift in Sources */,
 				5C41D4162196C8310092BB18 /* DashboardViewController.swift in Sources */,
+				5C41D4482197010A0092BB18 /* TasksListTableViewCell.swift in Sources */,
+				5C41D4452196FEE30092BB18 /* TasksListTableDataSource.swift in Sources */,
 				5C41D4272196D8D60092BB18 /* RegistrationParams.swift in Sources */,
 				5C41D41B2196C9040092BB18 /* UIViewController+navigate.swift in Sources */,
 				5C41D3F62196A8B30092BB18 /* LoginParams.swift in Sources */,

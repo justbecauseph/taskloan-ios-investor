@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import IQKeyboardManagerSwift
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -16,7 +17,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
-        CredentialsManager.shared.clearToken()
+        autoLogOut()
+        initKeyboardManager()
         initWindow()
         return true
     }
@@ -47,6 +49,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 }
 
 extension AppDelegate {
+    
+    func autoLogOut() {
+        CredentialsManager.shared.clearToken()
+    }
+    
+    func initKeyboardManager() {
+        IQKeyboardManager.shared.enable = true
+    }
     
     func initWindow() {
         window = UIWindow(frame: UIScreen.main.bounds)

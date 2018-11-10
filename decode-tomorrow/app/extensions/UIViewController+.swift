@@ -40,10 +40,10 @@ extension UIViewController {
     }
     
     func showAlert(_ type: AlertType,
-                   title paramTitle: String?,
+                   title paramTitle: String? = nil,
                    message: String,
-                   affirmativeAction: AffirmativeAction?,
-                   cancelAction: CancelAction?) {
+                   affirmativeAction: AffirmativeAction? = nil,
+                   cancelAction: CancelAction? = nil) {
         
         let title = paramTitle ?? type.title
         

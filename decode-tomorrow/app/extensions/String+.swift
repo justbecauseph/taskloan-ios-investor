@@ -10,12 +10,15 @@ import Foundation
 
 extension String {
     
-    
     private static let dateFormatter = DateFormatter()
     
     func asDate(_ format: DateTimeFormats, formatter: DateFormatter = String.dateFormatter) -> Date {
         formatter.dateFormat = format.rawValue
         return formatter.date(from: self)!
+    }
+    
+    func trim() -> String {
+        return self.trimmingCharacters(in: .whitespacesAndNewlines)
     }
     
 }

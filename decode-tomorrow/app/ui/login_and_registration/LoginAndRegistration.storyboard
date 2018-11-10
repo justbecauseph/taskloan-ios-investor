@@ -88,8 +88,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="19" translatesAutoresizingMaskIntoConstraints="NO" id="V0h-aL-dM9">
-                                <rect key="frame" x="24" y="258.5" width="327" height="150"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="V0h-aL-dM9">
+                                <rect key="frame" x="24" y="117.5" width="327" height="432"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Phone Number" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8qD-LC-Oe2">
                                         <rect key="frame" x="0.0" y="0.0" width="327" height="32"/>
@@ -98,10 +98,64 @@
                                         </constraints>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits" textContentType="email"/>
+                                        <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="phonePad" textContentType="tel"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ivi-0B-3zz">
+                                        <rect key="frame" x="0.0" y="48" width="327" height="32"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="32" id="Jqc-ea-KeV"/>
+                                        </constraints>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" secureTextEntry="YES" textContentType="password"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Confirm Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Gzc-Yh-Dnl">
+                                        <rect key="frame" x="0.0" y="96" width="327" height="32"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="32" id="Zt5-TK-y3N"/>
+                                        </constraints>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" secureTextEntry="YES" textContentType="password"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9Eu-eQ-nRl">
+                                        <rect key="frame" x="0.0" y="144" width="327" height="32"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="32" id="LAk-JI-Goo"/>
+                                        </constraints>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" textContentType="email"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kTW-on-8lb">
+                                        <rect key="frame" x="0.0" y="192" width="327" height="32"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="32" id="Qwp-W6-uPN"/>
+                                        </constraints>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" textContentType="name"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Address" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mTA-tX-ysP">
+                                        <rect key="frame" x="0.0" y="240" width="327" height="32"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="32" id="EmF-nD-3A8"/>
+                                        </constraints>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="emailAddress"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="School" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="57U-Qe-mNr">
+                                        <rect key="frame" x="0.0" y="288" width="327" height="32"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="32" id="enp-di-RVh"/>
+                                        </constraints>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no"/>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6rr-rD-hzG">
-                                        <rect key="frame" x="0.0" y="51" width="327" height="40"/>
+                                        <rect key="frame" x="0.0" y="336" width="327" height="40"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="40" id="dwN-hO-uWa"/>
                                         </constraints>
@@ -111,7 +165,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hag-fm-Ab1">
-                                        <rect key="frame" x="0.0" y="110" width="327" height="40"/>
+                                        <rect key="frame" x="0.0" y="392" width="327" height="40"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="40" id="uhh-Yl-6pL"/>
                                         </constraints>
@@ -134,8 +188,14 @@
                         <viewLayoutGuide key="safeArea" id="Eim-2T-IVE"/>
                     </view>
                     <connections>
+                        <outlet property="addressTextField" destination="mTA-tX-ysP" id="FUw-ST-ony"/>
+                        <outlet property="confirmPasswordTextField" destination="Gzc-Yh-Dnl" id="jIf-cM-NON"/>
+                        <outlet property="emailTextField" destination="9Eu-eQ-nRl" id="QeC-v0-0ar"/>
+                        <outlet property="nameTextField" destination="kTW-on-8lb" id="ey3-69-l1p"/>
+                        <outlet property="passwordTextField" destination="ivi-0B-3zz" id="J5A-MZ-9lx"/>
                         <outlet property="phoneNumberTextField" destination="8qD-LC-Oe2" id="6sJ-Sy-c0C"/>
                         <outlet property="registerButton" destination="6rr-rD-hzG" id="xgx-fD-9jb"/>
+                        <outlet property="schoolTextField" destination="57U-Qe-mNr" id="FhC-xZ-OWY"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sde-rW-g7V" userLabel="First Responder" sceneMemberID="firstResponder"/>

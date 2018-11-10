@@ -14,10 +14,12 @@ class DashboardViewController: UIViewController, Storyboarded {
     static var storyboardId: String = "DashboardViewController"
     static var storyboard: String = "Dashboard"
     
-    // MARK: - Outlers
+    // MARK: - Outlets
+    @IBOutlet weak var tasksListTableView: UITableView!
     // END OUTLETS
     
     private var tasks: [GetTaskListViewModel.TaskViewModel] = []
+    private var tasksListTableDataSource: TasksListTableDataSource?
     
     // MARK: - Init
     
@@ -38,8 +40,21 @@ class DashboardViewController: UIViewController, Storyboarded {
         self.tasksListFeature = TasksListFeature(self)
     }
     
-    private func initViews() {
+    fileprivate func initTasksListTableView() {
+        let nib = UINib(nibName: TasksListTableViewCell.identifier, bundle: nil)
+        self.tasksListTableView.register(nib, forCellReuseIdentifier: TasksListTableViewCell.identifier)
+        self.tasksListTableView.delegate = self
+        self.tasksListTableDataSource = TasksListTableDataSource()
+        self.tasksListTableView.dataSource = self.tasksListTableDataSource
     }
+    
+    private func initViews() {
+        initTasksListTableView()
+    }
+    
+}
+
+extension DashboardViewController: UITableViewDelegate {
     
 }
 
@@ -47,6 +62,7 @@ extension DashboardViewController: TasksListFeatureDelegate {
     
     func getTaskListSuccess(_ viewModel: GetTaskListViewModel) {
         self.tasks = viewModel.tasks
+        self.tasksListTableDataSource?.reloadData(self.tasks, tableView: tasksListTableView)
     }
     
     func getLoanError(error: String) {

@@ -12,7 +12,9 @@ import RxSwift
 struct GetTaskListViewModel {
     
     struct TaskViewModel {
+        var name: String
         init(_ model: Task) {
+            self.name = "Task Name"
         }
     }
     

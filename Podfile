@@ -8,5 +8,6 @@ target 'decode-tomorrow' do
   # Pods for decode-tomorrow
   pod 'Moya/RxSwift', '~> 11.0'
   pod 'PopupDialog', '~> 0.9'
+  pod 'IQKeyboardManagerSwift'
 
 end
