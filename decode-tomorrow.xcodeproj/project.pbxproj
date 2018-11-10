@@ -75,6 +75,7 @@
 		5CE91D4C219757F400E880B2 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CE91D4B219757F400E880B2 /* Colors.swift */; };
 		5CE91D4E21976B9500E880B2 /* UIView+addDashedBorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CE91D4D21976B9500E880B2 /* UIView+addDashedBorder.swift */; };
 		5CE91D502197737E00E880B2 /* UIView+cornerRadius.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CE91D4F2197737E00E880B2 /* UIView+cornerRadius.swift */; };
+		5CE91D52219789B100E880B2 /* ReasonsForLoaning.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CE91D51219789B100E880B2 /* ReasonsForLoaning.swift */; };
 		806FDACB3D1CFDF97896266F /* Pods_decode_tomorrow.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2E5ACC0A7215D5A44B392E8 /* Pods_decode_tomorrow.framework */; };
 /* End PBXBuildFile section */
 
@@ -150,6 +151,7 @@
 		5CE91D4B219757F400E880B2 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		5CE91D4D21976B9500E880B2 /* UIView+addDashedBorder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+addDashedBorder.swift"; sourceTree = "<group>"; };
 		5CE91D4F2197737E00E880B2 /* UIView+cornerRadius.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+cornerRadius.swift"; sourceTree = "<group>"; };
+		5CE91D51219789B100E880B2 /* ReasonsForLoaning.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReasonsForLoaning.swift; sourceTree = "<group>"; };
 		B2E5ACC0A7215D5A44B392E8 /* Pods_decode_tomorrow.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_decode_tomorrow.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2647098DFCB5FE47D40D83C /* Pods-decode-tomorrow.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-decode-tomorrow.release.xcconfig"; path = "Pods/Target Support Files/Pods-decode-tomorrow/Pods-decode-tomorrow.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -280,6 +282,7 @@
 				5C0441DF219692D9006251FD /* Fonts.swift */,
 				5C41D40B2196C1F80092BB18 /* HeaderKeys.swift */,
 				5C83CCA021972B5B00991A89 /* TasksCategories.swift */,
+				5CE91D51219789B100E880B2 /* ReasonsForLoaning.swift */,
 			);
 			path = enums;
 			sourceTree = "<group>";
@@ -665,6 +668,7 @@
 				5CE91D4E21976B9500E880B2 /* UIView+addDashedBorder.swift in Sources */,
 				5C41D4252196D8B90092BB18 /* RegistrationFeature.swift in Sources */,
 				5C41D3F82196ABB70092BB18 /* PrivimiteSequence+mapX.swift in Sources */,
+				5CE91D52219789B100E880B2 /* ReasonsForLoaning.swift in Sources */,
 				5C41D4362196F0F60092BB18 /* LoanFeature.swift in Sources */,
 				5C41D4222196D7250092BB18 /* RegistrationViewController.swift in Sources */,
 				5C41D4002196B8650092BB18 /* LoginViewController.swift in Sources */,
