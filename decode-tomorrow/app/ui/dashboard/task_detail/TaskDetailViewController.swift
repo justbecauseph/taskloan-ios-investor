@@ -71,11 +71,16 @@ class TaskDetailViewController: UIViewController, Storyboarded {
     }
 
     private func initFeature() {
-        self.feature = ClaimTaskFeature(self)
+//        self.feature = ClaimTaskFeature(self)
     }
 
     // MARK: - Actions
-
+    @IBAction func didtTapContactButton(_ sender: Any) {
+    }
+    
+    @IBAction func didTapClaimButton(_ sender: Any) {
+        self.navigate(to: .loan)
+    }
 }
 
 extension TaskDetailViewController: ClaimTaskFeatureDeletage {

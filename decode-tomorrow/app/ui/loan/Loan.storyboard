@@ -16,9 +16,98 @@
                     <view key="view" contentMode="scaleToFill" id="11F-bB-uMB">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PkA-o1-tXI">
+                                <rect key="frame" x="0.0" y="20" width="375" height="160"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" alignment="lastBaseline" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="qmF-Re-iSB">
+                                        <rect key="frame" x="93.5" y="54" width="188.5" height="52.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PHP" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bBd-4N-PVj">
+                                                <rect key="frame" x="0.0" y="25" width="38.5" height="27.5"/>
+                                                <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="20"/>
+                                                <color key="textColor" red="0.0" green="0.66274509800000003" blue="0.61568627450000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="500.00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xjC-eG-Pqp">
+                                                <rect key="frame" x="42.5" y="0.0" width="146" height="61.5"/>
+                                                <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="45"/>
+                                                <color key="textColor" red="0.0" green="0.66274509800000003" blue="0.61568627450000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <label opaque="NO" userInteractionEnabled="NO" alpha="0.60000002384185791" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Loan Amount" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gNG-d3-QXh">
+                                        <rect key="frame" x="150.5" y="115.5" width="74" height="16.5"/>
+                                        <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="12"/>
+                                        <color key="textColor" red="0.0" green="0.66274509800000003" blue="0.61568627450000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="qmF-Re-iSB" firstAttribute="centerY" secondItem="PkA-o1-tXI" secondAttribute="centerY" id="7bd-dQ-DbF"/>
+                                    <constraint firstItem="gNG-d3-QXh" firstAttribute="top" secondItem="xjC-eG-Pqp" secondAttribute="bottom" id="Efg-dp-cAS"/>
+                                    <constraint firstItem="qmF-Re-iSB" firstAttribute="centerX" secondItem="PkA-o1-tXI" secondAttribute="centerX" id="IhQ-oC-CxJ"/>
+                                    <constraint firstAttribute="height" constant="160" id="Tdg-Kw-Lvm"/>
+                                    <constraint firstItem="gNG-d3-QXh" firstAttribute="centerX" secondItem="PkA-o1-tXI" secondAttribute="centerX" id="Utl-Am-09O"/>
+                                </constraints>
+                            </view>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Zmu-Nu-iPZ">
+                                <rect key="frame" x="48" y="180" width="279" height="115.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Reason for Loaning" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cKu-fs-tuP">
+                                        <rect key="frame" x="0.0" y="0.0" width="279" height="19.5"/>
+                                        <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="14"/>
+                                        <color key="textColor" red="0.43921568630000002" green="0.43921568630000002" blue="0.43921568630000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Reason" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zk7-er-hcs">
+                                        <rect key="frame" x="0.0" y="29.5" width="279" height="36"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="36" id="yLb-BA-HBQ"/>
+                                        </constraints>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" textContentType="password"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6gA-4k-Yn0">
+                                        <rect key="frame" x="0.0" y="75.5" width="279" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="wii-oT-w7p"/>
+                                        </constraints>
+                                        <state key="normal" title="Loan"/>
+                                        <connections>
+                                            <action selector="didTapLoanButton:" destination="g0a-tL-dGQ" eventType="touchUpInside" id="p1e-P2-hyA"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QuP-0r-84b">
+                                <rect key="frame" x="281" y="209.5" width="46" height="36"/>
+                                <state key="normal" title="Button"/>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="PkA-o1-tXI" firstAttribute="leading" secondItem="4wE-r4-5zU" secondAttribute="leading" id="Cbl-ql-ReP"/>
+                            <constraint firstItem="Zmu-Nu-iPZ" firstAttribute="leading" secondItem="4wE-r4-5zU" secondAttribute="leading" constant="48" id="HOi-Wc-qaS"/>
+                            <constraint firstItem="PkA-o1-tXI" firstAttribute="top" secondItem="4wE-r4-5zU" secondAttribute="top" id="OY9-KH-CYi"/>
+                            <constraint firstItem="Zmu-Nu-iPZ" firstAttribute="top" secondItem="PkA-o1-tXI" secondAttribute="bottom" id="RXP-N5-zXt"/>
+                            <constraint firstItem="QuP-0r-84b" firstAttribute="top" secondItem="zk7-er-hcs" secondAttribute="top" id="UdU-Ss-VJz"/>
+                            <constraint firstItem="QuP-0r-84b" firstAttribute="bottom" secondItem="zk7-er-hcs" secondAttribute="bottom" id="ZDY-PH-viI"/>
+                            <constraint firstItem="4wE-r4-5zU" firstAttribute="trailing" secondItem="Zmu-Nu-iPZ" secondAttribute="trailing" constant="48" id="ji5-X2-RzI"/>
+                            <constraint firstAttribute="trailing" secondItem="PkA-o1-tXI" secondAttribute="trailing" id="n8N-i5-PBk"/>
+                            <constraint firstItem="QuP-0r-84b" firstAttribute="trailing" secondItem="zk7-er-hcs" secondAttribute="trailing" id="z8W-d3-0zK"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="4wE-r4-5zU"/>
                     </view>
+                    <connections>
+                        <outlet property="dropDownButton" destination="QuP-0r-84b" id="Dfy-wu-IY8"/>
+                        <outlet property="loanAmountText" destination="xjC-eG-Pqp" id="d8V-Gl-Mza"/>
+                        <outlet property="loanButton" destination="6gA-4k-Yn0" id="GHD-Eb-TJn"/>
+                        <outlet property="reasonTextField" destination="zk7-er-hcs" id="238-1j-ggN"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ppj-mu-w4A" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

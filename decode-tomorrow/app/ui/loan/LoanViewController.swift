@@ -7,7 +7,7 @@
 //
 
 import Foundation
-
+import FontAwesome_swift
 import UIKit
 
 class LoanViewController: UIViewController, Storyboarded {
@@ -16,6 +16,10 @@ class LoanViewController: UIViewController, Storyboarded {
     static var storyboard: String = "Loan"
     
     // MARK: - Outlets
+    @IBOutlet weak var loanAmountText: UILabel!
+    @IBOutlet weak var reasonTextField: UITextField!
+    @IBOutlet weak var dropDownButton: UIButton!
+    @IBOutlet weak var loanButton: UIButton!
     
     // END OUTLETS
     
@@ -25,14 +29,36 @@ class LoanViewController: UIViewController, Storyboarded {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        initFeature()
+        initViews()
     }
     
     private func initFeature() {
         self.feature = LoanFeature(self)
     }
     
+    private func initViews() {
+
+        dropDownButton.setTitleColor(Colors.teal.uiColor, for: .normal)
+        dropDownButton.titleLabel?.font = UIFont.fontAwesome(ofSize: 14, style: FontAwesomeStyle.solid)
+        dropDownButton.setTitle(String.fontAwesomeIcon(name: .chevronDown), for: .normal)
+        
+        // !HACK - set the rightView to avoid overlapping text and button:
+        reasonTextField.rightView = dropDownButton
+        reasonTextField.rightViewMode = .always
+        
+        reasonTextField.style()
+        loanButton.style()
+    }
+    
     // MARK: - Actions
+    
+    @objc private func dropDownButtonAction() {
+        
+    }
+    
+    @IBAction func didTapLoanButton(_ sender: Any) {
+    }
     
 }
 

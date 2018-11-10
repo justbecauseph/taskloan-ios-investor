@@ -241,10 +241,16 @@
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s1i-bt-WYL">
                                                 <rect key="frame" x="0.0" y="0.0" width="159.5" height="30"/>
                                                 <state key="normal" title="Contact Task Manager"/>
+                                                <connections>
+                                                    <action selector="didtTapContactButton:" destination="M1u-cm-Sz6" eventType="touchUpInside" id="IcJ-CA-LDk"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rmj-Ac-q0k">
                                                 <rect key="frame" x="167.5" y="0.0" width="159.5" height="30"/>
                                                 <state key="normal" title="Claim"/>
+                                                <connections>
+                                                    <action selector="didTapClaimButton:" destination="M1u-cm-Sz6" eventType="touchUpInside" id="MWx-de-s4b"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>

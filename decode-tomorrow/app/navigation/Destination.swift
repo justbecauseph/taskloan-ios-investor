@@ -21,6 +21,7 @@ enum Destination {
     case documentUpload
     case dashboard
     case taskDetails(TaskViewModel)
+    case loan
     
     var viewController: UIViewController {
         switch self {
@@ -38,6 +39,8 @@ enum Destination {
             let vc = TaskDetailViewController.instanciate()
             vc.initValues(taskViewModel)
             return vc
+        case .loan:
+            return LoanViewController.instanciate()
         }
     }
     
@@ -47,7 +50,8 @@ enum Destination {
              .register,
              .documentUpload,
              .dashboard,
-             .taskDetails:
+             .taskDetails,
+             .loan:
             return nil
         }
     }
@@ -57,7 +61,8 @@ enum Destination {
         case .login,
              .register,
              .documentUpload,
-             .dashboard:
+             .dashboard,
+             .loan:
             return .present
         case .taskDetails:
             return .push
@@ -71,7 +76,8 @@ enum Destination {
             return false
         case .register,
              .documentUpload,
-             .taskDetails:
+             .taskDetails,
+             .loan:
             return true
         }
     }
