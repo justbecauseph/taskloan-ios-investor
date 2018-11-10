@@ -23,6 +23,7 @@ class TasksListTableViewCell: UITableViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
+        initViews()
         // Initialization code
     }
 
