@@ -13,7 +13,7 @@ struct ApiError: Decodable {
     let message: String
 }
 
-extension ApiError: LocalizedError {
+extension ApiError: Swift.Error, LocalizedError {
 //    var localizedDescription: String { return messages.joined() }
     var localizedDescription: String { return message }
 }

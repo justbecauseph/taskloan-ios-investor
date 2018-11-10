@@ -18,6 +18,9 @@ enum Destination {
     
     case login(CallsAnApiBehindLogin)
     case register
+    case documentUpload
+    case dashboard
+    case taskDetails
     
     var viewController: UIViewController {
         switch self {
@@ -27,13 +30,21 @@ enum Destination {
             return vc
         case .register:
             return RegistrationViewController.instanciate()
+        case .documentUpload:
+            return DocumentUploadViewController.instanciate()
+        case .dashboard:
+            return DashboardViewController.instanciate()
+        case .taskDetail:
+            <#code#>
         }
     }
     
     var completion: (() -> Void)? {
         switch self {
         case .login,
-             .register:
+             .register,
+             .documentUpload,
+             .dashboard:
             return nil
         }
     }
@@ -41,16 +52,20 @@ enum Destination {
     var navType: NavigationType {
         switch self {
         case .login,
-             .register:
+             .register,
+             .documentUpload,
+             .dashboard:
             return .present
         }
     }
     
     var animated: Bool {
         switch self {
-        case .login:
+        case .login,
+             .dashboard:
             return false
-        case .register:
+        case .register,
+             .documentUpload:
             return true
         }
     }

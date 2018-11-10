@@ -67,6 +67,9 @@
 		5C83CCA8219738FD00991A89 /* DocumentUploadFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C83CCA7219738FD00991A89 /* DocumentUploadFeature.swift */; };
 		5C83CCAC219739F900991A89 /* EmptyResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C83CCAB219739F900991A89 /* EmptyResponse.swift */; };
 		5C83CCAE21973FC900991A89 /* UIView+shake.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C83CCAD21973FC900991A89 /* UIView+shake.swift */; };
+		5C83CCB9219748FC00991A89 /* ClaimTaskFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C83CCB8219748FC00991A89 /* ClaimTaskFeature.swift */; };
+		5C83CCBB2197496200991A89 /* ClaimTaskParams.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C83CCBA2197496200991A89 /* ClaimTaskParams.swift */; };
+		5CE91D45219749DF00E880B2 /* ClaimTaskResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CE91D44219749DF00E880B2 /* ClaimTaskResponse.swift */; };
 		806FDACB3D1CFDF97896266F /* Pods_decode_tomorrow.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2E5ACC0A7215D5A44B392E8 /* Pods_decode_tomorrow.framework */; };
 /* End PBXBuildFile section */
 
@@ -134,6 +137,9 @@
 		5C83CCA7219738FD00991A89 /* DocumentUploadFeature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentUploadFeature.swift; sourceTree = "<group>"; };
 		5C83CCAB219739F900991A89 /* EmptyResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyResponse.swift; sourceTree = "<group>"; };
 		5C83CCAD21973FC900991A89 /* UIView+shake.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+shake.swift"; sourceTree = "<group>"; };
+		5C83CCB8219748FC00991A89 /* ClaimTaskFeature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClaimTaskFeature.swift; sourceTree = "<group>"; };
+		5C83CCBA2197496200991A89 /* ClaimTaskParams.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClaimTaskParams.swift; sourceTree = "<group>"; };
+		5CE91D44219749DF00E880B2 /* ClaimTaskResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClaimTaskResponse.swift; sourceTree = "<group>"; };
 		B2E5ACC0A7215D5A44B392E8 /* Pods_decode_tomorrow.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_decode_tomorrow.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2647098DFCB5FE47D40D83C /* Pods-decode-tomorrow.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-decode-tomorrow.release.xcconfig"; path = "Pods/Target Support Files/Pods-decode-tomorrow/Pods-decode-tomorrow.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -221,7 +227,6 @@
 				5C41D42F2196F0BB0092BB18 /* loan */,
 				5C41D4122196C8180092BB18 /* dashboard */,
 				5C41D3FE2196B8560092BB18 /* login_and_registration */,
-				5C41D42C2196EFE80092BB18 /* task_detail */,
 			);
 			path = ui;
 			sourceTree = "<group>";
@@ -283,6 +288,7 @@
 		5C41D3ED2196A6B10092BB18 /* features */ = {
 			isa = PBXGroup;
 			children = (
+				5C83CCB7219748F100991A89 /* claim_task */,
 				5C41D4282196D9780092BB18 /* Feature.swift */,
 				5C83CCAB219739F900991A89 /* EmptyResponse.swift */,
 				5C83CCA6219738F100991A89 /* document_upload */,
@@ -344,9 +350,8 @@
 			isa = PBXGroup;
 			children = (
 				5C41D4132196C8230092BB18 /* Dashboard.storyboard */,
-				5C41D4152196C8310092BB18 /* DashboardViewController.swift */,
-				5C41D43E2196FAF80092BB18 /* TaskListTableDataSource */,
-				5C41D4412196FC480092BB18 /* TaskListTableViewCell */,
+				5C83CCB52197488800991A89 /* dashboard */,
+				5C83CCB62197489700991A89 /* task_detail */,
 			);
 			path = dashboard;
 			sourceTree = "<group>";
@@ -376,14 +381,6 @@
 				5C41D42A2196DD230092BB18 /* RegistrationResponse.swift */,
 			);
 			path = registration;
-			sourceTree = "<group>";
-		};
-		5C41D42C2196EFE80092BB18 /* task_detail */ = {
-			isa = PBXGroup;
-			children = (
-				5C41D42D2196F02F0092BB18 /* TaskDetailViewController.swift */,
-			);
-			path = task_detail;
 			sourceTree = "<group>";
 		};
 		5C41D42F2196F0BB0092BB18 /* loan */ = {
@@ -442,6 +439,34 @@
 				5C83CCA7219738FD00991A89 /* DocumentUploadFeature.swift */,
 			);
 			path = document_upload;
+			sourceTree = "<group>";
+		};
+		5C83CCB52197488800991A89 /* dashboard */ = {
+			isa = PBXGroup;
+			children = (
+				5C41D4152196C8310092BB18 /* DashboardViewController.swift */,
+				5C41D43E2196FAF80092BB18 /* TaskListTableDataSource */,
+				5C41D4412196FC480092BB18 /* TaskListTableViewCell */,
+			);
+			path = dashboard;
+			sourceTree = "<group>";
+		};
+		5C83CCB62197489700991A89 /* task_detail */ = {
+			isa = PBXGroup;
+			children = (
+				5C41D42D2196F02F0092BB18 /* TaskDetailViewController.swift */,
+			);
+			path = task_detail;
+			sourceTree = "<group>";
+		};
+		5C83CCB7219748F100991A89 /* claim_task */ = {
+			isa = PBXGroup;
+			children = (
+				5C83CCBA2197496200991A89 /* ClaimTaskParams.swift */,
+				5C83CCB8219748FC00991A89 /* ClaimTaskFeature.swift */,
+				5CE91D44219749DF00E880B2 /* ClaimTaskResponse.swift */,
+			);
+			path = claim_task;
 			sourceTree = "<group>";
 		};
 		92268904371A7902E553098C /* Frameworks */ = {
@@ -611,6 +636,7 @@
 				5C41D3EF2196A6BD0092BB18 /* LoginFeature.swift in Sources */,
 				5C41D42B2196DD230092BB18 /* RegistrationResponse.swift in Sources */,
 				5C83CCA5219738AA00991A89 /* DocumentUploadViewController.swift in Sources */,
+				5C83CCB9219748FC00991A89 /* ClaimTaskFeature.swift in Sources */,
 				5C83CCAE21973FC900991A89 /* UIView+shake.swift in Sources */,
 				5C41D4252196D8B90092BB18 /* RegistrationFeature.swift in Sources */,
 				5C41D3F82196ABB70092BB18 /* PrivimiteSequence+mapX.swift in Sources */,
@@ -626,6 +652,7 @@
 				5C83CCA3219730AB00991A89 /* Task.swift in Sources */,
 				5C41D4452196FEE30092BB18 /* TasksListTableDataSource.swift in Sources */,
 				5C41D4272196D8D60092BB18 /* RegistrationParams.swift in Sources */,
+				5CE91D45219749DF00E880B2 /* ClaimTaskResponse.swift in Sources */,
 				5C83CCA8219738FD00991A89 /* DocumentUploadFeature.swift in Sources */,
 				5C41D41B2196C9040092BB18 /* UIViewController+navigate.swift in Sources */,
 				5C41D3F62196A8B30092BB18 /* LoginParams.swift in Sources */,
@@ -635,6 +662,7 @@
 				5C41D3FD2196B16A0092BB18 /* ApiError.swift in Sources */,
 				5C0441B6219684D0006251FD /* Provider.swift in Sources */,
 				5C04419921967D5A006251FD /* AppDelegate.swift in Sources */,
+				5C83CCBB2197496200991A89 /* ClaimTaskParams.swift in Sources */,
 				5C0441B4219684C8006251FD /* Service.swift in Sources */,
 				5C41D3FA2196AE3A0092BB18 /* PrimitiveSequence+mapErrors.swift in Sources */,
 				5C41D43D2196F7980092BB18 /* UIViewController+.swift in Sources */,

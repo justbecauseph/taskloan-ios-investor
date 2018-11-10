@@ -35,11 +35,9 @@ class DocumentUploadViewController: UIViewController, Storyboarded {
     // MARK: - Actions
     
     @IBAction func didTapVerifyButton(_ sender: Any) {
-        
         guard let documentImage = documentImageView.image else { return }
         guard let data = documentImage.jpegData(compressionQuality: 0.50) else { return }
         self.feature?.uploadDocument(data)
-        
     }
     
 }

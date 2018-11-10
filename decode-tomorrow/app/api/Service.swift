@@ -14,6 +14,7 @@ enum Service {
     case register(RegistrationParams)
     case uploadDocument(Data)
     case getTasksList(TasksCategories)
+    case claimTask(ClaimTaskParams)
 }
 
 extension Service: TargetType {
@@ -34,6 +35,8 @@ extension Service: TargetType {
             return "tasks"
         case .uploadDocument:
             return "me/documents"
+        case .claimTask:
+            return "me/task"
         }
     }
     
@@ -41,7 +44,8 @@ extension Service: TargetType {
         switch self {
         case .login,
              .register,
-             .uploadDocument:
+             .uploadDocument,
+             .claimTask:
             return .post
         case .getTasksList:
             return .get
@@ -58,11 +62,13 @@ extension Service: TargetType {
             return .requestJSONEncodable(params)
         case .register(let params):
             return .requestJSONEncodable(params)
-        case .getTasksList:
-            return .requestPlain
         case .uploadDocument(let data):
             let mfd = MultipartFormData(provider: .data(data), name: "name", fileName: "filename", mimeType: "image/jpeg")
             return .uploadMultipart([mfd])
+        case .getTasksList:
+            return .requestPlain
+        case .claimTask(let params):
+            return .requestJSONEncodable(params)
         }
     }
     
@@ -92,8 +98,9 @@ extension Service {
         case .register,
              .login:
             return .none
-        case .getTasksList,
-             .uploadDocument:
+        case .uploadDocument,
+             .getTasksList,
+             .claimTask:
             return .loggedIn
         }
     }
