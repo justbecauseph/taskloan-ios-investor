@@ -14,7 +14,6 @@
 		5C0441B021967ED0006251FD /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C0441AF21967ED0006251FD /* MainViewController.swift */; };
 		5C0441B4219684C8006251FD /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C0441B3219684C8006251FD /* Service.swift */; };
 		5C0441B6219684D0006251FD /* Provider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C0441B5219684D0006251FD /* Provider.swift */; };
-		5C0441B921968D26006251FD /* UIViewController+api.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C0441B821968D26006251FD /* UIViewController+api.swift */; };
 		5C0441BC21968ED7006251FD /* SampleResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C0441BB21968ED7006251FD /* SampleResponse.swift */; };
 		5C0441CF219690D6006251FD /* IBMPlexSans-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5C0441C0219690D5006251FD /* IBMPlexSans-MediumItalic.ttf */; };
 		5C0441D0219690D6006251FD /* IBMPlexSans-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5C0441C1219690D5006251FD /* IBMPlexSans-Bold.ttf */; };
@@ -31,6 +30,11 @@
 		5C0441DB219690D6006251FD /* IBMPlexSans-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5C0441CC219690D6006251FD /* IBMPlexSans-Light.ttf */; };
 		5C0441DC219690D6006251FD /* IBMPlexSans-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5C0441CD219690D6006251FD /* IBMPlexSans-Thin.ttf */; };
 		5C0441DD219690D6006251FD /* IBMPlexSans-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5C0441CE219690D6006251FD /* IBMPlexSans-Medium.ttf */; };
+		5C0441E0219692D9006251FD /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C0441DF219692D9006251FD /* Fonts.swift */; };
+		5C0441E221969326006251FD /* DateTimeFormats.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C0441E121969326006251FD /* DateTimeFormats.swift */; };
+		5C0441E921969D5D006251FD /* LoginRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C0441E821969D5D006251FD /* LoginRepository.swift */; };
+		5C0441EC21969EE2006251FD /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C0441EB21969EE2006251FD /* BaseViewController.swift */; };
+		5C0441EE21969F01006251FD /* BaseRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C0441ED21969F01006251FD /* BaseRepository.swift */; };
 		806FDACB3D1CFDF97896266F /* Pods_decode_tomorrow.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2E5ACC0A7215D5A44B392E8 /* Pods_decode_tomorrow.framework */; };
 /* End PBXBuildFile section */
 
@@ -45,7 +49,6 @@
 		5C0441AF21967ED0006251FD /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		5C0441B3219684C8006251FD /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
 		5C0441B5219684D0006251FD /* Provider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Provider.swift; sourceTree = "<group>"; };
-		5C0441B821968D26006251FD /* UIViewController+api.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+api.swift"; sourceTree = "<group>"; };
 		5C0441BB21968ED7006251FD /* SampleResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleResponse.swift; sourceTree = "<group>"; };
 		5C0441C0219690D5006251FD /* IBMPlexSans-MediumItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "IBMPlexSans-MediumItalic.ttf"; sourceTree = "<group>"; };
 		5C0441C1219690D5006251FD /* IBMPlexSans-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "IBMPlexSans-Bold.ttf"; sourceTree = "<group>"; };
@@ -62,6 +65,11 @@
 		5C0441CC219690D6006251FD /* IBMPlexSans-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "IBMPlexSans-Light.ttf"; sourceTree = "<group>"; };
 		5C0441CD219690D6006251FD /* IBMPlexSans-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "IBMPlexSans-Thin.ttf"; sourceTree = "<group>"; };
 		5C0441CE219690D6006251FD /* IBMPlexSans-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "IBMPlexSans-Medium.ttf"; sourceTree = "<group>"; };
+		5C0441DF219692D9006251FD /* Fonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
+		5C0441E121969326006251FD /* DateTimeFormats.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateTimeFormats.swift; sourceTree = "<group>"; };
+		5C0441E821969D5D006251FD /* LoginRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRepository.swift; sourceTree = "<group>"; };
+		5C0441EB21969EE2006251FD /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		5C0441ED21969F01006251FD /* BaseRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseRepository.swift; sourceTree = "<group>"; };
 		B2E5ACC0A7215D5A44B392E8 /* Pods_decode_tomorrow.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_decode_tomorrow.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2647098DFCB5FE47D40D83C /* Pods-decode-tomorrow.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-decode-tomorrow.release.xcconfig"; path = "Pods/Target Support Files/Pods-decode-tomorrow/Pods-decode-tomorrow.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -119,8 +127,10 @@
 			children = (
 				5C04419821967D5A006251FD /* AppDelegate.swift */,
 				5C0441B221968423006251FD /* api */,
-				5C0441B721968D17006251FD /* extensions */,
+				5C0441EA21969EBE006251FD /* base_classes */,
+				5C0441DE219692CB006251FD /* enums */,
 				5C0441BA21968E79006251FD /* models */,
+				5C0441E721969D33006251FD /* repositories */,
 				5C0441B121968419006251FD /* ui */,
 			);
 			path = app;
@@ -162,14 +172,6 @@
 			path = api;
 			sourceTree = "<group>";
 		};
-		5C0441B721968D17006251FD /* extensions */ = {
-			isa = PBXGroup;
-			children = (
-				5C0441B821968D26006251FD /* UIViewController+api.swift */,
-			);
-			path = extensions;
-			sourceTree = "<group>";
-		};
 		5C0441BA21968E79006251FD /* models */ = {
 			isa = PBXGroup;
 			children = (
@@ -198,6 +200,32 @@
 				5C0441C2219690D5006251FD /* OFL.txt */,
 			);
 			path = fonts;
+			sourceTree = "<group>";
+		};
+		5C0441DE219692CB006251FD /* enums */ = {
+			isa = PBXGroup;
+			children = (
+				5C0441DF219692D9006251FD /* Fonts.swift */,
+				5C0441E121969326006251FD /* DateTimeFormats.swift */,
+			);
+			path = enums;
+			sourceTree = "<group>";
+		};
+		5C0441E721969D33006251FD /* repositories */ = {
+			isa = PBXGroup;
+			children = (
+				5C0441E821969D5D006251FD /* LoginRepository.swift */,
+			);
+			path = repositories;
+			sourceTree = "<group>";
+		};
+		5C0441EA21969EBE006251FD /* base_classes */ = {
+			isa = PBXGroup;
+			children = (
+				5C0441ED21969F01006251FD /* BaseRepository.swift */,
+				5C0441EB21969EE2006251FD /* BaseViewController.swift */,
+			);
+			path = base_classes;
 			sourceTree = "<group>";
 		};
 		92268904371A7902E553098C /* Frameworks */ = {
@@ -354,12 +382,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5C0441E0219692D9006251FD /* Fonts.swift in Sources */,
+				5C0441E221969326006251FD /* DateTimeFormats.swift in Sources */,
 				5C0441B6219684D0006251FD /* Provider.swift in Sources */,
 				5C0441B021967ED0006251FD /* MainViewController.swift in Sources */,
 				5C0441BC21968ED7006251FD /* SampleResponse.swift in Sources */,
-				5C0441B921968D26006251FD /* UIViewController+api.swift in Sources */,
+				5C0441EC21969EE2006251FD /* BaseViewController.swift in Sources */,
 				5C04419921967D5A006251FD /* AppDelegate.swift in Sources */,
 				5C0441B4219684C8006251FD /* Service.swift in Sources */,
+				5C0441EE21969F01006251FD /* BaseRepository.swift in Sources */,
+				5C0441E921969D5D006251FD /* LoginRepository.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

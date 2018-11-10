@@ -8,7 +8,7 @@
 
 import UIKit
 
-class MainViewController: UIViewController {
+class MainViewController: BaseViewController<LoginRepository> {
 
     override func viewDidLoad() {
         super.viewDidLoad()

@@ -8,10 +8,11 @@
 
 import Foundation
 import Moya
+import RxSwift
 
 class Provider: MoyaProvider<Service> {
     
-    static let shared = Provider()
+    static let sharedRx = Reactive(Provider())
     
     init() {
         let plugins = [NetworkLoggerPlugin.init(verbose: true, cURL: true)]
