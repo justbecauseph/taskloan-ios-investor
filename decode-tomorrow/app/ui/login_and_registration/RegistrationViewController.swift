@@ -67,8 +67,6 @@ class RegistrationViewController: UIViewController, Storyboarded {
     @IBAction func didTapConfirmButton(_ sender: Any) {
         
         showHUD()
-        
-        self.navigate(to: .documentUpload)
  
         let hc = "student"
         
@@ -137,6 +135,8 @@ extension RegistrationViewController: RegistrationFeatureDelegate {
     
     func registrationSuccess(_ viewModel: RegistrationViewModel) {
         hideHUD()
+        let params = LoginParams.init(email: emailTextField.text!.trim(), password: passwordTextField.text!.trim())
+        CredentialsManager.shared.store(params)
         self.navigate(to: .documentUpload)
     }
     
