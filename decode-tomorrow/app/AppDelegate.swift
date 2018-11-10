@@ -62,6 +62,15 @@ extension AppDelegate {
     func initNavBar() {
         let appearance = UINavigationBar.appearance()
         appearance.barTintColor = Colors.teal.uiColor
+        appearance.tintColor = UIColor.white
+        
+        let barButtonItemAppearance = UIBarButtonItem.appearance()
+        
+        barButtonItemAppearance.setTitleTextAttributes(
+            [
+                NSAttributedString.Key.font: Fonts.AvenirNextRegular.font(16),
+                NSAttributedString.Key.foregroundColor: UIColor.white
+            ], for: .normal)
     }
     
     func initWindow() {
