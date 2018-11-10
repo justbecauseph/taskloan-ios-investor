@@ -1,0 +1,6 @@
+framework module Pods_decode_tomorrow {
+  umbrella header "Pods-decode-tomorrow-umbrella.h"
+
+  export *
+  module * { export * }
+}
