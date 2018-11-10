@@ -69,5 +69,56 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PvL-Bg-FNs" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
         </scene>
+        <!--Registration View Controller-->
+        <scene sceneID="tsm-Hk-fcv">
+            <objects>
+                <viewController storyboardIdentifier="RegistrationViewController" id="DBo-qD-MEp" customClass="RegistrationViewController" customModule="decode_tomorrow" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="YSR-F9-wdU">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="19" translatesAutoresizingMaskIntoConstraints="NO" id="V0h-aL-dM9">
+                                <rect key="frame" x="24" y="288" width="327" height="91"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Phone Number" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8qD-LC-Oe2">
+                                        <rect key="frame" x="0.0" y="0.0" width="327" height="32"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="32" id="6OI-a2-JYp"/>
+                                        </constraints>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" textContentType="email"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6rr-rD-hzG">
+                                        <rect key="frame" x="0.0" y="51" width="327" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="dwN-hO-uWa"/>
+                                        </constraints>
+                                        <state key="normal" title="REGISTER"/>
+                                        <connections>
+                                            <action selector="didTapRegisterButton:" destination="DBo-qD-MEp" eventType="touchUpInside" id="q5Y-QI-ZAN"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="V0h-aL-dM9" firstAttribute="leading" secondItem="Eim-2T-IVE" secondAttribute="leading" constant="24" id="12O-1S-pbf"/>
+                            <constraint firstItem="Eim-2T-IVE" firstAttribute="trailing" secondItem="V0h-aL-dM9" secondAttribute="trailing" constant="24" id="HQ3-nQ-Gfv"/>
+                            <constraint firstItem="V0h-aL-dM9" firstAttribute="centerY" secondItem="YSR-F9-wdU" secondAttribute="centerY" id="b0V-sl-pNS"/>
+                            <constraint firstItem="V0h-aL-dM9" firstAttribute="centerX" secondItem="YSR-F9-wdU" secondAttribute="centerX" id="rKP-kY-uhe"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Eim-2T-IVE"/>
+                    </view>
+                    <connections>
+                        <outlet property="phoneNumberTextField" destination="8qD-LC-Oe2" id="6sJ-Sy-c0C"/>
+                        <outlet property="registerButton" destination="6rr-rD-hzG" id="xgx-fD-9jb"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sde-rW-g7V" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="846" y="27"/>
+        </scene>
     </scenes>
 </document>
