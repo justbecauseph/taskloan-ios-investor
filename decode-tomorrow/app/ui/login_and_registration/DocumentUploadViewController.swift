@@ -88,7 +88,10 @@ extension DocumentUploadViewController: UIImagePickerControllerDelegate, UINavig
 extension DocumentUploadViewController: DocumentUploadFeatureDelegate {
     
     func documentUploadSuccess() {
-        showAlert(.info, message: "What's next?")
+        let action = UIAlertController.AffirmativeAction.init(name: "OK") {
+            UIApplication.shared.keyWindow?.rootViewController?.dismiss(animated: true, completion: nil)
+        }
+        showAlert(.info, title: "Registration Complete!", message: "Tap OK to continue.", affirmativeAction: action)
     }
     
     func documentUploadError(error: String) {
