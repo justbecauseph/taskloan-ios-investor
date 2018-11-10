@@ -14,11 +14,25 @@ class TaskDetailViewController: UIViewController, Storyboarded {
     static var storyboard: String = "Dashboard"
 
     // MARK: - Outlets
+    @IBOutlet weak var taskTitle: UILabel!
+    
+    @IBOutlet weak var categoryView: UIView!
+    @IBOutlet weak var categoryLabel: UILabel!
+    
+    @IBOutlet weak var amountView: UIView!
+    @IBOutlet weak var amountLabel: UILabel!
+    
+    @IBOutlet weak var taskedByNameLabel: UILabel!
+    @IBOutlet weak var hoursLabel: UILabel!
+    
     @IBOutlet weak var detailCardView: UIView!
     @IBOutlet weak var descriptionCardView: UIView!
     @IBOutlet weak var descriptionTextView: UITextView!
     @IBOutlet weak var contactButton: UIButton!
     @IBOutlet weak var claimButton: UIButton!
+    
+    @IBOutlet weak var userIconLabel: UILabel!
+    @IBOutlet weak var clockIconLabel: UILabel!
     // END OUTLETS
 
     var feature: ClaimTaskFeature?
@@ -38,6 +52,15 @@ class TaskDetailViewController: UIViewController, Storyboarded {
     }
     
     private func initViews() {
+        
+        categoryView.cornerRadius = 5
+        amountView.cornerRadius = 5
+        
+        userIconLabel.font = UIFont.fontAwesome(ofSize: 12, style: .regular)
+        userIconLabel.text = String.fontAwesomeIcon(name: .user)
+        clockIconLabel.font = UIFont.fontAwesome(ofSize: 12, style: .regular)
+        clockIconLabel.text = String.fontAwesomeIcon(name: .clock)
+        
         detailCardView.cornerRadius = 10
         descriptionCardView.cornerRadius = 10
         descriptionCardView.clipsToBounds = true

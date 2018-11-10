@@ -104,7 +104,7 @@
                                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8iX-Kr-y5N">
                                                                         <rect key="frame" x="0.0" y="0.0" width="80" height="24"/>
                                                                         <subviews>
-                                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="{type}" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GpD-AE-DbJ">
+                                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="{cat}" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GpD-AE-DbJ">
                                                                                 <rect key="frame" x="0.0" y="0.0" width="80" height="24"/>
                                                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                                                 <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="12"/>
@@ -260,11 +260,20 @@
                         <viewLayoutGuide key="safeArea" id="KvW-S0-RoD"/>
                     </view>
                     <connections>
+                        <outlet property="amountLabel" destination="qFq-R2-ely" id="Vb0-3V-pA2"/>
+                        <outlet property="amountView" destination="jgE-hv-kPg" id="lDf-fw-T9h"/>
+                        <outlet property="categoryLabel" destination="GpD-AE-DbJ" id="x7v-lC-75F"/>
+                        <outlet property="categoryView" destination="8iX-Kr-y5N" id="y9q-84-Y0s"/>
                         <outlet property="claimButton" destination="rmj-Ac-q0k" id="9OH-2h-uM4"/>
+                        <outlet property="clockIconLabel" destination="t9X-TG-bGg" id="Lbk-MV-Npc"/>
                         <outlet property="contactButton" destination="s1i-bt-WYL" id="L8x-VP-tFY"/>
                         <outlet property="descriptionCardView" destination="4G5-KQ-TZf" id="dAf-B8-TK9"/>
                         <outlet property="descriptionTextView" destination="0AZ-GO-N2K" id="Hh2-Ml-HP3"/>
                         <outlet property="detailCardView" destination="UIf-Yg-xln" id="Rd7-wO-EPk"/>
+                        <outlet property="hoursLabel" destination="TgK-f2-xTS" id="k7S-cS-JeV"/>
+                        <outlet property="taskTitle" destination="cxW-RR-eWG" id="9dJ-on-eFc"/>
+                        <outlet property="taskedByNameLabel" destination="KPy-AH-dEF" id="KVW-Qv-fVQ"/>
+                        <outlet property="userIconLabel" destination="dyf-Ms-8CY" id="boo-wQ-IQc"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="k4l-ul-UTs" userLabel="First Responder" sceneMemberID="firstResponder"/>
