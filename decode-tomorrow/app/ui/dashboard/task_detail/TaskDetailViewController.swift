@@ -53,6 +53,10 @@ class TaskDetailViewController: UIViewController, Storyboarded {
     
     private func initViews() {
         
+        let m = self.taskViewModel
+        taskTitle.text = m?.title
+        categoryLabel.text
+        
         categoryView.cornerRadius = 5
         amountView.cornerRadius = 5
         

@@ -30,6 +30,9 @@ class TasksListTableDataSource: NSObject, UITableViewDataSource {
         let task = self.tasks[indexPath.row]
         cell.selectionStyle = .none
         cell.taskTitleLabel.text = task.title
+        cell.nameLabel.text = task.model.user!.name
+        cell.hoursLabel.text = task.model.duration
+        cell.amountValueLabel.text = "PHP " + String((task.model.amount?.split(separator: ".")[0])!)
         return cell
     }
     
