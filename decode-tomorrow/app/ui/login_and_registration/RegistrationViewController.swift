@@ -66,6 +66,8 @@ class RegistrationViewController: UIViewController, Storyboarded {
     
     @IBAction func didTapConfirmButton(_ sender: Any) {
         
+        showHUD()
+        
         self.navigate(to: .documentUpload)
         
         return
@@ -136,10 +138,12 @@ class RegistrationViewController: UIViewController, Storyboarded {
 extension RegistrationViewController: RegistrationFeatureDelegate {
     
     func registrationSuccess(_ viewModel: RegistrationViewModel) {
+        hideHUD()
         self.navigate(to: .documentUpload)
     }
     
     func registrationError(error: String) {
+        hideHUD()
         showAlert(.error, message: error)
     }
     

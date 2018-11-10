@@ -60,6 +60,7 @@ class LoginViewController: UIViewController, Storyboarded {
         let password = passwordTextField.text ?? ""
         feature?.login(email: email, password: password)
         callsAnApiBehindMe?.callApi(self)
+        showHUD()
     }
     
     @IBAction func didTapRegisterButton(_ sender: Any) {
@@ -71,11 +72,13 @@ class LoginViewController: UIViewController, Storyboarded {
 extension LoginViewController: LoginFeatureDelegate {
     
     func loginSuccess() {
+        hideHUD()
         feature?.detach()
         self.dismiss(animated: true, completion: nil)
     }
     
     func loginFailed(error: String) {
+        hideHUD()
         loginButton.shake()
         showAlert(.error, message: error)
     }

@@ -60,12 +60,19 @@ class DashboardViewController: UIViewController, Storyboarded {
     
     private func initViews() {
         initTasksListTableView()
+        self.navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Logout", style: .plain, target: self, action: #selector(logoutHandler))
     }
     
     // MARK: - Action
     @objc private func refreshControlAction() {
+        showHUD()
         refreshControl.beginRefreshing()
         self.tasksListFeature?.fetchTasksList(category: .office)
+    }
+    
+    @objc private func logoutHandler() {
+        CredentialsManager.shared.clearToken()
+        viewDidAppear(false)
     }
     
 }
@@ -96,6 +103,7 @@ extension DashboardViewController: UITableViewDelegate {
 extension DashboardViewController: TasksListFeatureDelegate {
     
     func getTaskListSuccess(_ viewModel: [TaskViewModel]) {
+        hideHUD()
         refreshControl.endRefreshing()
         
         self.tasks = viewModel
@@ -107,6 +115,7 @@ extension DashboardViewController: TasksListFeatureDelegate {
     }
     
     func getTaskListError(error: String) {
+        hideHUD()
         refreshControl.endRefreshing()
         
         self.loginFeatureDelegate?.loginFailed(error: error)

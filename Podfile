@@ -10,5 +10,6 @@ target 'decode-tomorrow' do
   pod 'PopupDialog', '~> 0.9'
   pod 'IQKeyboardManagerSwift'
   pod 'FontAwesome.swift'
+  pod 'MBProgressHUD', '~> 1.1.0'
 
 end

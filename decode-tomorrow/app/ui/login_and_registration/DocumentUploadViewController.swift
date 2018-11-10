@@ -7,7 +7,6 @@
 //
 
 import Foundation
-
 import UIKit
 
 class DocumentUploadViewController: UIViewController, Storyboarded {
@@ -28,6 +27,7 @@ class DocumentUploadViewController: UIViewController, Storyboarded {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        initFeature()
         initViews()
     }
     

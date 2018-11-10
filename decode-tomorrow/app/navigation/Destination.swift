@@ -61,10 +61,10 @@ enum Destination {
         case .login,
              .register,
              .documentUpload,
-             .dashboard,
-             .loan:
+             .dashboard:
             return .present
-        case .taskDetails:
+        case .taskDetails,
+             .loan:
             return .push
         }
     }
