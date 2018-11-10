@@ -80,6 +80,12 @@ extension DashboardViewController: CallsAnApiBehindLogin {
 
 extension DashboardViewController: UITableViewDelegate {
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        guard let dataSource = self.tasksListTableDataSource else { return }
+        let task = dataSource.tasks[indexPath.row]
+        self.navigate(to: .taskDetails(task))
+    }
+    
 }
 
 extension DashboardViewController: TasksListFeatureDelegate {

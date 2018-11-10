@@ -11,7 +11,7 @@ import UIKit
 class TaskDetailViewController: UIViewController, Storyboarded {
 
     static var storyboardId: String = "TaskDetailViewController"
-    static var storyboard: String = ""
+    static var storyboard: String = "Dashboard"
 
     // MARK: - Outlets
 

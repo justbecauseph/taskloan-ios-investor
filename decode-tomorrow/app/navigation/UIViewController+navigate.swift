@@ -16,7 +16,7 @@ extension UIViewController {
         case .present:
             self.present(destination.viewController, animated: destination.animated, completion: destination.completion)
         case .push:
-            (self as! UINavigationController).pushViewController(destination.viewController, animated: destination.animated)
+            self.navigationController?.pushViewController(destination.viewController, animated: destination.animated)
         }
     }
     

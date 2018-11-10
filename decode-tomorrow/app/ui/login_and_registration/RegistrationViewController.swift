@@ -121,7 +121,7 @@ class RegistrationViewController: UIViewController, Storyboarded {
 extension RegistrationViewController: RegistrationFeatureDelegate {
     
     func registrationSuccess(_ viewModel: RegistrationViewModel) {
-        showAlert(.success, message: "So far so good!")
+        self.navigate(to: .documentUpload)
     }
     
     func registrationError(error: String) {

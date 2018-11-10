@@ -66,7 +66,7 @@ extension Service: TargetType {
             let mfd = MultipartFormData(provider: .data(data), name: "name", fileName: "filename", mimeType: "image/jpeg")
             return .uploadMultipart([mfd])
         case .getTasksList:
-            return .requestPlain
+            return .requestParameters(parameters: ["with[]": "user"], encoding: URLEncoding.default)
         case .claimTask(let params):
             return .requestJSONEncodable(params)
         }

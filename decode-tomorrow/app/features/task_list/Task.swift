@@ -8,6 +8,10 @@
 
 import Foundation
 
+struct User: Decodable {
+    var name: String
+}
+
 struct Task: Decodable {
     let id: Int?
     let userId: Int?
@@ -20,4 +24,5 @@ struct Task: Decodable {
     let completedAt: String?
     let createdAt: String?
     let updatedAt: String?
+    let user: User?
 }

@@ -288,9 +288,9 @@
 		5C41D3ED2196A6B10092BB18 /* features */ = {
 			isa = PBXGroup;
 			children = (
-				5C83CCB7219748F100991A89 /* claim_task */,
-				5C41D4282196D9780092BB18 /* Feature.swift */,
 				5C83CCAB219739F900991A89 /* EmptyResponse.swift */,
+				5C41D4282196D9780092BB18 /* Feature.swift */,
+				5C83CCB7219748F100991A89 /* claim_task */,
 				5C83CCA6219738F100991A89 /* document_upload */,
 				5C41D4342196F0E90092BB18 /* loan */,
 				5C41D3F02196A8010092BB18 /* login */,
