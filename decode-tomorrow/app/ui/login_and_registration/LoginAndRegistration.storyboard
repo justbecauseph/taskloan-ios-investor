@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -31,7 +32,7 @@
                                         <constraints>
                                             <constraint firstAttribute="height" constant="36" id="8PK-9A-5Cv"/>
                                         </constraints>
-                                        <nil key="textColor"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" textContentType="email"/>
                                     </textField>
@@ -46,7 +47,7 @@
                                         <constraints>
                                             <constraint firstAttribute="height" constant="36" id="Tob-KV-dN2"/>
                                         </constraints>
-                                        <nil key="textColor"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" textContentType="password"/>
                                     </textField>
@@ -62,7 +63,7 @@
                                     </button>
                                 </subviews>
                             </stackView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo_square" translatesAutoresizingMaskIntoConstraints="NO" id="Tzz-Lr-l6d">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="taskloan pro logo square" translatesAutoresizingMaskIntoConstraints="NO" id="Tzz-Lr-l6d">
                                 <rect key="frame" x="87.5" y="108" width="200" height="200"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="200" id="S57-SG-SiO"/>
@@ -94,7 +95,7 @@
                                 </subviews>
                             </stackView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="cqZ-k7-TAH" firstAttribute="bottom" secondItem="lzF-bv-gFb" secondAttribute="bottom" constant="40" id="86h-5B-N7e"/>
                             <constraint firstItem="Rcd-1E-Fiz" firstAttribute="leading" secondItem="cqZ-k7-TAH" secondAttribute="leading" constant="48" id="8nK-UR-5Tv"/>
@@ -154,7 +155,7 @@
                                                     </button>
                                                 </subviews>
                                             </stackView>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo_square" translatesAutoresizingMaskIntoConstraints="NO" id="3ug-K7-SRT">
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="taskloan pro logo square" translatesAutoresizingMaskIntoConstraints="NO" id="3ug-K7-SRT">
                                                 <rect key="frame" x="87.5" y="88" width="200" height="200"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="200" id="ov4-VK-L3w"/>
@@ -175,7 +176,7 @@
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="32" id="6OI-a2-JYp"/>
                                                         </constraints>
-                                                        <nil key="textColor"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                         <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="phonePad" textContentType="tel"/>
                                                     </textField>
@@ -190,7 +191,7 @@
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="32" id="Jqc-ea-KeV"/>
                                                         </constraints>
-                                                        <nil key="textColor"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                         <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" secureTextEntry="YES" textContentType="password"/>
                                                     </textField>
@@ -205,7 +206,7 @@
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="32" id="Zt5-TK-y3N"/>
                                                         </constraints>
-                                                        <nil key="textColor"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                         <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" secureTextEntry="YES" textContentType="password"/>
                                                     </textField>
@@ -220,7 +221,7 @@
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="32" id="LAk-JI-Goo"/>
                                                         </constraints>
-                                                        <nil key="textColor"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                         <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" textContentType="email"/>
                                                     </textField>
@@ -235,7 +236,7 @@
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="32" id="Qwp-W6-uPN"/>
                                                         </constraints>
-                                                        <nil key="textColor"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                         <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" textContentType="name"/>
                                                     </textField>
@@ -250,7 +251,7 @@
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="32" id="EmF-nD-3A8"/>
                                                         </constraints>
-                                                        <nil key="textColor"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                         <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="emailAddress"/>
                                                     </textField>
@@ -265,7 +266,7 @@
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="32" id="enp-di-RVh"/>
                                                         </constraints>
-                                                        <nil key="textColor"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                         <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no"/>
                                                     </textField>
@@ -282,7 +283,7 @@
                                                 </subviews>
                                             </stackView>
                                         </subviews>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstAttribute="bottom" secondItem="FWb-uA-ZzX" secondAttribute="bottom" constant="40" id="1Md-Vg-PYZ"/>
                                             <constraint firstAttribute="trailing" secondItem="V0h-aL-dM9" secondAttribute="trailing" constant="48" id="9m0-4A-Vwp"/>
@@ -304,7 +305,7 @@
                                 </constraints>
                             </scrollView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="Eim-2T-IVE" firstAttribute="bottom" secondItem="iTt-wH-IF4" secondAttribute="bottom" id="7Uj-R7-S50"/>
                             <constraint firstItem="Eim-2T-IVE" firstAttribute="trailing" secondItem="iTt-wH-IF4" secondAttribute="trailing" id="Mkh-J0-oAz"/>
@@ -358,7 +359,7 @@
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="32" id="HUR-S4-C6X"/>
                                                         </constraints>
-                                                        <nil key="textColor"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                         <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no"/>
                                                     </textField>
@@ -385,7 +386,7 @@
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="32" id="X9P-qe-L14"/>
                                                         </constraints>
-                                                        <nil key="textColor"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                         <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no"/>
                                                     </textField>
@@ -401,7 +402,7 @@
                                                     </button>
                                                 </subviews>
                                             </stackView>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo_square" translatesAutoresizingMaskIntoConstraints="NO" id="Tdf-Hd-h9U">
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="taskloan pro logo square" translatesAutoresizingMaskIntoConstraints="NO" id="Tdf-Hd-h9U">
                                                 <rect key="frame" x="87.5" y="88" width="200" height="200"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="200" id="1XQ-R7-5OH"/>
@@ -419,7 +420,7 @@
                                                 </connections>
                                             </button>
                                         </subviews>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstAttribute="trailing" secondItem="0BB-An-2Zo" secondAttribute="trailing" constant="48" id="1az-LM-Esz"/>
                                             <constraint firstItem="Tdf-Hd-h9U" firstAttribute="centerX" secondItem="JaB-3E-f0D" secondAttribute="centerX" id="9UV-u8-Of0"/>
@@ -443,7 +444,7 @@
                                 </constraints>
                             </scrollView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="Tza-8a-4e8" firstAttribute="trailing" secondItem="w6p-Ef-PB2" secondAttribute="trailing" id="06e-sI-gFH"/>
                             <constraint firstItem="Tza-8a-4e8" firstAttribute="bottom" secondItem="w6p-Ef-PB2" secondAttribute="bottom" id="1rD-fs-0Re"/>
@@ -467,6 +468,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="logo_square" width="663" height="663"/>
+        <image name="taskloan pro logo square" width="1326" height="1326"/>
     </resources>
 </document>

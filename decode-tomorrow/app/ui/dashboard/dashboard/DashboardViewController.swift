@@ -19,6 +19,7 @@ class DashboardViewController: UIViewController, Storyboarded {
     // MARK: - Outlets
     @IBOutlet weak var tasksListTableView: UITableView!
     // END OUTLETS
+    @IBOutlet weak var newTaskImageView: UIImageView!
     
     private var tasks: [TaskViewModel] = []
     private var tasksListTableDataSource: TasksListTableDataSource?
@@ -68,6 +69,7 @@ class DashboardViewController: UIViewController, Storyboarded {
     private func initViews() {
         initTasksListTableView()
         self.navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Logout", style: .plain, target: self, action: #selector(logoutHandler))
+        self.newTaskImageView.addDashedBorderWhite()
     }
     
     // MARK: - Action

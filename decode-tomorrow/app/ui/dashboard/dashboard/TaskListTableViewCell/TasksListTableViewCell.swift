@@ -26,6 +26,9 @@ class TasksListTableViewCell: UITableViewCell {
     @IBOutlet weak var clockLabel: UILabel!
     // MARK: - Init
     
+    @IBOutlet weak var statusLabel: UILabel!
+    
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         initViews()
@@ -39,6 +42,13 @@ class TasksListTableViewCell: UITableViewCell {
     }
     
     private func initViews() {
+        
+        statusLabel.layer.borderColor = UIColor.init(red: 0, green: 169, blue: 157, alpha: 1).cgColor
+        statusLabel.layer.borderWidth = 3
+        statusLabel.cornerRadius = 10
+        
+        
+        
         baseView.cornerRadius = 10
         paletteView.cornerRadius = 5
         amountView.cornerRadius = 5

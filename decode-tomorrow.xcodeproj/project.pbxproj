@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		521CD1AC2197B41300861077 /* CreateTaskModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 521CD1AB2197B41300861077 /* CreateTaskModel.swift */; };
 		5C04419921967D5A006251FD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C04419821967D5A006251FD /* AppDelegate.swift */; };
 		5C0441A021967D5C006251FD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5C04419F21967D5C006251FD /* Assets.xcassets */; };
 		5C0441A321967D5C006251FD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5C0441A121967D5C006251FD /* LaunchScreen.storyboard */; };
@@ -82,6 +83,7 @@
 
 /* Begin PBXFileReference section */
 		44C9DF6D70D6C84A54308A0C /* Pods-decode-tomorrow.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-decode-tomorrow.debug.xcconfig"; path = "Pods/Target Support Files/Pods-decode-tomorrow/Pods-decode-tomorrow.debug.xcconfig"; sourceTree = "<group>"; };
+		521CD1AB2197B41300861077 /* CreateTaskModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateTaskModel.swift; sourceTree = "<group>"; };
 		5C04419521967D5A006251FD /* decode-tomorrow.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "decode-tomorrow.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5C04419821967D5A006251FD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5C04419F21967D5C006251FD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -170,6 +172,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		521CD1AA2197B3EF00861077 /* create_task */ = {
+			isa = PBXGroup;
+			children = (
+				521CD1AB2197B41300861077 /* CreateTaskModel.swift */,
+			);
+			path = create_task;
+			sourceTree = "<group>";
+		};
 		5C04418C21967D5A006251FD = {
 			isa = PBXGroup;
 			children = (
@@ -311,6 +321,7 @@
 				5C41D4282196D9780092BB18 /* Feature.swift */,
 				5C83CCB7219748F100991A89 /* claim_task */,
 				5C83CCA6219738F100991A89 /* document_upload */,
+				521CD1AA2197B3EF00861077 /* create_task */,
 				5C41D4342196F0E90092BB18 /* loan */,
 				5C41D3F02196A8010092BB18 /* login */,
 				5C41D4232196D8A20092BB18 /* registration */,
@@ -695,6 +706,7 @@
 				5C41D3F62196A8B30092BB18 /* LoginParams.swift in Sources */,
 				5C0441E0219692D9006251FD /* Fonts.swift in Sources */,
 				5C0441E221969326006251FD /* DateTimeFormats.swift in Sources */,
+				521CD1AC2197B41300861077 /* CreateTaskModel.swift in Sources */,
 				5C41D4382196F2520092BB18 /* TasksListFeature.swift in Sources */,
 				5C41D3FD2196B16A0092BB18 /* ApiError.swift in Sources */,
 				5C0441B6219684D0006251FD /* Provider.swift in Sources */,

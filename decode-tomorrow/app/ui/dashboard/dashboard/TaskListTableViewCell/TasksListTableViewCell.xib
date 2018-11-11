@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -91,6 +92,16 @@
                                     </label>
                                 </subviews>
                             </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pending" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EET-rg-zhg">
+                                <rect key="frame" x="222" y="71.5" width="70" height="24"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="70" id="HgK-Nx-YFy"/>
+                                    <constraint firstAttribute="height" constant="24" id="OGu-eo-yUc"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                                <color key="textColor" red="0.0" green="0.66274509800000003" blue="0.61568627450000002" alpha="0.69986087330000002" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -98,10 +109,13 @@
                             <constraint firstItem="hZw-Wf-uFh" firstAttribute="centerY" secondItem="Qif-cg-rio" secondAttribute="centerY" id="5Db-zY-5u0"/>
                             <constraint firstAttribute="bottom" secondItem="Qif-cg-rio" secondAttribute="bottom" constant="8" id="5xZ-Lo-Pwr"/>
                             <constraint firstAttribute="trailing" secondItem="D4d-3O-XwO" secondAttribute="trailing" constant="16" id="Es0-c7-Pl3"/>
+                            <constraint firstAttribute="trailing" secondItem="EET-rg-zhg" secondAttribute="trailing" constant="20" id="Jhd-LL-3Yo"/>
                             <constraint firstItem="D4d-3O-XwO" firstAttribute="top" secondItem="3LM-Jd-pJ8" secondAttribute="top" constant="16" id="LYs-jA-b6R"/>
+                            <constraint firstItem="EET-rg-zhg" firstAttribute="leading" relation="lessThanOrEqual" secondItem="NZU-kh-aXG" secondAttribute="trailing" constant="134" id="PNA-Sn-jKB"/>
                             <constraint firstItem="Ybl-CT-uCF" firstAttribute="leading" secondItem="3LM-Jd-pJ8" secondAttribute="leading" constant="16" id="WMl-lc-Ime"/>
                             <constraint firstItem="hZw-Wf-uFh" firstAttribute="leading" secondItem="Qif-cg-rio" secondAttribute="trailing" constant="8" id="ZCK-3d-UlC"/>
                             <constraint firstItem="D4d-3O-XwO" firstAttribute="leading" secondItem="3LM-Jd-pJ8" secondAttribute="leading" constant="16" id="kzy-62-vQY"/>
+                            <constraint firstAttribute="bottom" secondItem="EET-rg-zhg" secondAttribute="bottom" constant="8" id="n9b-Z2-bY9"/>
                             <constraint firstItem="Ybl-CT-uCF" firstAttribute="top" secondItem="D4d-3O-XwO" secondAttribute="bottom" constant="8" symbolic="YES" id="nW2-kG-ciQ"/>
                             <constraint firstItem="Qif-cg-rio" firstAttribute="leading" secondItem="3LM-Jd-pJ8" secondAttribute="leading" constant="16" id="wey-nF-rEn"/>
                         </constraints>
@@ -125,6 +139,7 @@
                 <outlet property="nameLabel" destination="6Bq-fY-DUM" id="ZCb-qJ-2oc"/>
                 <outlet property="paletteView" destination="Qif-cg-rio" id="w0H-kh-5K6"/>
                 <outlet property="personIcon" destination="0uL-vx-VEA" id="7gT-9y-szC"/>
+                <outlet property="statusLabel" destination="EET-rg-zhg" id="C9g-kG-ss1"/>
                 <outlet property="taskTitleLabel" destination="D4d-3O-XwO" id="2IL-2I-P3q"/>
             </connections>
             <point key="canvasLocation" x="137.59999999999999" y="138.53073463268368"/>

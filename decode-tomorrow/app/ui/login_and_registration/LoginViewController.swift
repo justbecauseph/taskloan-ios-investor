@@ -66,7 +66,6 @@ class LoginViewController: UIViewController, Storyboarded {
     @IBAction func didTapRegisterButton(_ sender: Any) {
         self.navigate(to: .register)
     }
-    
 }
 
 extension LoginViewController: LoginFeatureDelegate {
